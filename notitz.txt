@@ -1,0 +1,323 @@
+====================
+      Quellen
+====================
+GameInfo					Spielobjekte (s. entity.manifest) Fraktionen, Schiffe, Fähigkeiten, Forschung, Planetentypen in BIN-Format, umwandelbar in TXT
+Mesh						3D-Modelle im MESH-Format, mit ConvertXSI aus XSI umwandelbar
+Particle					Partikeleffekte
+PipelineEffect				Shader in GLSL
+String						Text (English.str enthält aus irgendeinem Grund die deutschen Zeilen...)
+TextureAnimations			Animationen
+Window						GUI; evtl. unwichtig
+entity.manifest				Liste aller Spielobjekte
+playerPictures.manifest		Liste von Spielericons (diverse Bilder, diese Portraits, du weißt schon); Aufgelistete Dateien liegen im Window-Ordner
+
+====================
+     Programme
+====================
+ConvertXSI					Wandelt XSI- in MESH-Dateien um
+Galaxy Forge				Für Singleplayer-Maps, ist unwichtig für unsere Zwecke
+Particle Forge				Zum "Ändern der graphischen Darstellung von Waffen, Explosionen, Fähigkeiten [etc.]", enthält große Mengen identischer Icons
+
+====================
+     Unwichtig
+====================
+Font						Schriftarten und Anwendungsvorschriften (in welcher GUI welche Schriftart & -größe auftaucht); müssen wir evtl. für eigene GUIs ändern
+Galaxy						Singleplayer-Maps
+brush.manifest				??? (wahrscheinlich irgendwas mit Graphik)
+galaxy.manifest				Liste der Singleplayer-Maps
+playerThemes.manifest		Unbekannt; Aufgelistete Dateien liegen im Window-Ordner
+skybox.manifest				Eine "Skybox" ist ein Würfel um die Map der es so aussehen lässt als wäre ein Himmel o. ä. da, unwichtig für unsere Zwecke
+
+====================
+ Aufbau einer Datei
+====================
+MANIFEST-DATEIEN
+1. Das Dateiformat (z. B. "TXT", "TXT2"). Steht da irgendwas anderes, müssen wir es mit ConvertData_Rebellion.exe umwandeln (habe Batchdateien dafür geschrieben, lies die Anleitung!)
+2. Ein Schlüsselwort (z. B. "entityNameCount") gefolgt von der Anzahl der Elemente (in Vanilla Anzahl Zeilen - 3)
+3. Danach in jeder Zeile ein Element bestehend aus einem Schlüsselwort ("entityName", "fileName", "meshFileName", "brushFile") und einem Dateinamen in doppelten Anführungsstrichen
+4. Eine leere Zeile am Ende (unnötig?)
+
+FRAKTIONSDATEIEN (PlayerXyz.entity)
+1. Das Dateiformat (z. B. "TXT", "TXT2"). Steht da irgendwas anderes, müssen wir es mit ConvertData_Rebellion.exe umwandeln (habe Batchdateien dafür geschrieben, lies die Anleitung!)
+2. Die folgenden Zeilen:
+	SinsArchiveVersion 194
+	entityType "Player"
+3. Das Schlüsselwort "raceNameStringID" gefolgt vom Eintragsnamen des Fraktionsnamens in der English.str in doppelten Anführungsstrichen
+4. Das Schlüsselwort "canColonize" gefolgt von TRUE oder FALSE
+5. Das Schlüsselwort "raceNameStringID" gefolgt von "Psi", "Tech", "Phase" oder "Other" in doppelten Anführungsstrichen
+6. Das Schlüsselwort "isSelectable" gefolgt von TRUE oder FALSE
+7. Das Schlüsselwort "selectablePriority" gefolgt von einer Zahl
+8. Das Schlüsselwort "randomCapitalShipNamePrefix" gefolgt vom Eintragspräfix für die Schiffsnamen in der English.str in doppelten Anführungsstrichen
+   Ein Schiffsname wird unter diesem Eintragspräfix gefolgt von einer zweistelligen (00, 01, 02...) Zahl gelagert
+9. Das Schlüsselwort "randomStarBaseNamePrefix" gefolgt vom Eintragspräfix für die Stationsnamen in der English.str in doppelten Anführungsstrichen
+   Ein Stationsname wird unter diesem Eintragspräfix gefolgt von einer zweistelligen (00, 01, 02...) Zahl gelagert
+10.Eine Liste, begonnen vom Schlüsselwort "entities" (die Listeneinträge sind dann eingerückt)
+	a) Eine Liste, begonnen vom Schlüsselwort "planetModuleInfo" (die Listeneinträge sind dann eingerückt)
+		1) Eine Liste, begonnen von "Page:0" (die Listeneinträge sind dann eingerückt)
+			a) Das Schlüsselwort "count" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge eingibt
+			b) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "entityDefName" und einem Dateinamen in doppelten Anführungsstrichen
+			   Diese Dateinamen geben logistische Strukturen an.
+		2) Eine Liste, begonnen von "Page:1" (die Listeneinträge sind dann eingerückt)
+			a) Das Schlüsselwort "count" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge eingibt
+			b) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "entityDefName" und einem Dateinamen in doppelten Anführungsstrichen
+			   Diese Dateinamen geben taktische Strukturen an.
+	b) Eine Liste, begonnen vom Schlüsselwort "titanInfo" (die Listeneinträge sind dann eingerückt)
+		1) Eine Liste, begonnen von "Page:0" (die Listeneinträge sind dann eingerückt)
+			a) Das Schlüsselwort "count" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge eingibt
+			b) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "entityDefName" und einem Dateinamen in doppelten Anführungsstrichen
+			   Diese Dateinamen geben Titanen an.
+	c) Eine Liste, begonnen vom Schlüsselwort "capitalShipInfo" (die Listeneinträge sind dann eingerückt)
+		1) Eine Liste, begonnen von "Page:0" (die Listeneinträge sind dann eingerückt)
+			a) Das Schlüsselwort "count" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge eingibt
+			b) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "entityDefName" und einem Dateinamen in doppelten Anführungsstrichen
+			   Diese Dateinamen geben Großkampfschiffe an.
+	d) Eine Liste, begonnen vom Schlüsselwort "frigateInfo" (die Listeneinträge sind dann eingerückt)
+		1) Eine Liste, begonnen von "Page:0" (die Listeneinträge sind dann eingerückt)
+			a) Das Schlüsselwort "count" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge eingibt
+			b) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "entityDefName" und einem Dateinamen in doppelten Anführungsstrichen
+			   Diese Dateinamen geben Fregatten an.
+		2) Eine Liste, begonnen von "Page:1" (die Listeneinträge sind dann eingerückt)
+			a) Das Schlüsselwort "count" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge eingibt
+			b) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "entityDefName" und einem Dateinamen in doppelten Anführungsstrichen
+			   Diese Dateinamen geben Kreuzer an.
+		3) Eine Liste, begonnen von "NotOnPage" (die Listeneinträge sind dann eingerückt, evtl. sind auch an anderen Stellen NotOnPage-Listen möglich)
+			a) Das Schlüsselwort "count" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge eingibt
+			b) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "entityDefName" und einem Dateinamen in doppelten Anführungsstrichen
+			   Diese Dateinamen geben Schiffe an, die man nicht bauen kann (z. B. Konstruktionsschiffe).
+	e) Eine Liste, begonnen vom Schlüsselwort "researchInfo" (die Listeneinträge sind dann eingerückt)
+		1) Das Schlüsselwort "count" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge eingibt
+		2) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "entityDefName" und einem Dateinamen in doppelten Anführungsstrichen
+		   Diese Dateinamen geben Forschungsziele an.
+	f) Eine Liste, begonnen vom Schlüsselwort "starBaseInfo" (die Listeneinträge sind dann eingerückt)
+		1) Das Schlüsselwort "count" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge eingibt
+		2) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "entityDefName" und einem Dateinamen in doppelten Anführungsstrichen
+		   Diese Dateinamen geben Sternenbasen an.
+11.Eine Liste, begonnen vom Schlüsselwort "debrisData" (die Listeneinträge sind dann eingerückt)
+	a) Das Schlüsselwort "numRandomMeshNamesLarge" gefolgt von einer Zahl, die die Anzahl der Einträge nach b) angibt
+	b) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "randomMeshName" und einem Dateinamen in doppelten Anführungsstrichen
+	   Diese Dateinamen geben Modelle an, die zufällig als großer Weltraumschrott spawnen.
+	c) Das Schlüsselwort "numRandomMeshNamesSmall" gefolgt von einer Zahl, die die Anzahl der Einträge nach d) angibt
+	d) In jeder Zeile ein Element bestehend aus dem Schlüsselwort "randomMeshName" und einem Dateinamen in doppelten Anführungsstrichen
+	   Diese Dateinamen geben Modelle an, die zufällig als kleiner Weltraumschrott spawnen.
+12.Eine Liste, begonnen vom Schlüsselwort "hyperspaceData" (die Listeneinträge sind dann eingerückt)
+   Beschäftigt sich mit Sounds (und Partikeln?) beim Phasensprung
+   Würde ich einfach aus Vanilla kopieren, daher hier keine genaue Beschreibung
+13.Eine Liste, begonnen vom Schlüsselwort "shieldData" (die Listeneinträge sind dann eingerückt)
+	a) Das Schlüsselwort "shieldAbsorbGrowthPerDamage" gefolgt von einem Dezimalbruch (Was bedeutet der?)
+	b) Das Schlüsselwort "shieldAbsorbDecayRate" gefolgt von einem Dezimalbruch (Wie schnell das Schild kaputtgeht?)
+	c) Das Schlüsselwort "shieldAbsorbBaseMin" gefolgt von einem Dezimalbruch (Wie viel das Schild prozentual mindestens an Schaden absorbiert?)
+	d) Das Schlüsselwort "shieldColor" gefolgt von einer Hexadezimalzahl (z. B. ff0eadff) im Format RRGGBBAA (A = Alpha = Deckkraft)
+14.Eine Liste, begonnen vom Schlüsselwort "gameEventData" (die Listeneinträge sind dann eingerückt)
+   Beschäftigt sich mit solchen Meldungen wie "Feindlicher Titan fertiggestellt" etc.
+   Würde ich einfach aus Vanilla kopieren, daher hier keine genaue Beschreibung
+15.Eine Liste, begonnen vom Schlüsselwort "planetElevatorData" (die Listeneinträge sind dann eingerückt)
+   Zweck unbekannt; hat mit Gebäuden (und Planetenupgrades?) zu tun
+16.Eine Liste, begonnen vom Schlüsselwort "musicThemeData" (die Listeneinträge sind dann eingerückt)
+   Beschäftigt sich mit der Spielmusik
+   Würde ich einfach aus Vanilla kopieren und evtl. am Ende bearbeiten, daher hier keine genaue Beschreibung
+17.Eine Liste, begonnen vom Schlüsselwort "hudSkinData" (die Listeneinträge sind dann eingerückt)
+   Beschäftigt sich mit den Anzeigen am Bildschirmrand etc.
+   Würde ich einfach aus Vanilla kopieren, daher hier keine genaue Beschreibung
+18.Eine Liste, begonnen vom Schlüsselwort "researchScreenData" (die Listeneinträge sind dann eingerückt)
+   Ein Element repräsentiert einen Forschungstab, wird im Fall der Advent-Loyalisten von "Combat", "Defense", "NonCombat", "Diplomacy", "Artifact" oder "Fleet" eingeleitet
+   und besteht aus folgenden eingerückten Elementen:
+	a) Das Schlüsselwort "blockCount" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge angibt
+	b) Einträgen, bestehend aus einer Liste die mit dem Schlüsselwort "block" eingeleitet wird und folgende eingerückte Elemente hat:
+	   (Ein solcher Eintrag bezeichnet eine dieser Flächen wie "Psi-Technik", "Erkenntnis", ...)
+		1) Das Schlüsselwort "area", gefolgt von vier Zahlen
+		   Diese Zahlen bezeichnen wohl XY von zwei gegenüberliegenden Eckpunkten der Fläche auf dem Bildschirm (in welchen Einheiten?)
+		2) Das Schlüsselwort "backdrop" gefolgt von einem Dateinamen (vmtl. Hintergrundbild der Fläche) in doppelten Anführungsstrichen
+		3) Das Schlüsselwort "tierIndicatorBackdrop" gefolgt von zwei doppelten Anführungsstrichen (Zweck unklar)
+		4) Das Schlüsselwort "title" gefolgt vom Eintragsnamen des Flächennamens in der English.str in doppelten Anführungsstrichen
+		5) Das Schlüsselwort "picture" gefolgt von zwei doppelten Anführungsstrichen (Zweck unklar)
+19.Eine Liste, begonnen vom Schlüsselwort "gameOverWindowData" (die Listeneinträge sind dann eingerückt)
+   Beschäftigt sich mit den Statistiken am Spielende (?)
+   Würde ich einfach aus Vanilla kopieren, daher hier keine genaue Beschreibung
+20.Eine Liste, begonnen vom Schlüsselwort "aiNameData" (die Listeneinträge sind dann eingerückt)
+	a) Das Schlüsselwort "nameCount" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge angibt
+	b) Einträgen, bestehend aus dem Schlüsselwort "name" gefolgt vom Eintragsnamen eines KI-Namen ("Rolus Solbare" etc.) in der English.str in doppelten Anführungsstrichen
+21.Das Schlüsselwort "raceNameParsePrefix" gefolgt von "PSI", "TECH" oder "PHASE"
+22.Das Schlüsselwort "raceNameParsePrefixFallback" gefolgt von "PSI", "TECH" oder "PHASE"
+23.Das Schlüsselwort "numResearchFields" gefolgt von der Anzahl der Elemente nach 24.
+24.Einige Einträge der Form: Schlüsselwort "field" gefolgt von einem Eintragsnamen eines Forschungstabs in der English.str in doppelten Anführungsstrichen
+25.Das Schlüsselwort "playerThemeGroupName" gefolgt von einem Dateinamen, der in der playerThemes.manifest gelistet ist (ohne Dateiendung) in doppelten Anführungsstrichen
+26.Das Schlüsselwort "playerPictureGroupName" gefolgt von einem Dateinamen, der in der playerPictures.manifest gelistet ist (ohne Dateiendung) in doppelten Anführungsstrichen
+   Bestimmt die "Profilfotos" die man sich aussuchen kann.
+27.Das Schlüsselwort "raceRelationsModCount" gefolgt von der Anzahl der Listen nach 28.
+28.Einige Listen, begonnen vom Schlüsselwort "raceRelationsModifier" (die Listeneinträge sind dann eingerückt)
+   Jede Liste beschreibt einen Modifier (Bonus / Malus) für die Beziehungen zu einer anderen Fraktion
+	a) Das Schlüsselwort "raceNameID" gefolgt vom Eintragsnamen, der bei der Zielfraktion als 3. eingetragen ist, in doppelten Anführungsstrichen
+	b) Das Schlüsselwort "modifierMin" gefolgt von einem Dezimalbruch, der die Veränderung am minimalen Beziehungswert angibt (?)
+	c) Das Schlüsselwort "modifierMax" gefolgt von einem Dezimalbruch, der die Veränderung am maximalen Beziehungswert angibt (?)
+	d) Das Schlüsselwort "factionRelationsModCount" gefolgt von der Anzahl der Listen nach e), i. d. R. 1
+	e) Einige (i. d. R. jedoch eine) Liste, begonnen vom Schlüsselwort "factionRelationsModifier" (die Listeneinträge sind dann eingerückt)
+	   Zweck nicht ganz klar
+		1) Das Schlüsselwort "factionNameID" gefolgt vom Eintragsnamen, der hier als 29. eingetragen ist
+		2) Das Schlüsselwort "otherFactionNameID" gefolgt vom Eintragsnamen, der bei der Zielfraktion als 29. eingetragen ist
+		3) Das Schlüsselwort "modifierMin" gefolgt von einem Dezimalbruch, der die Veränderung am minimalen Beziehungswert angibt (?)
+		4) Das Schlüsselwort "modifierMax" gefolgt von einem Dezimalbruch, der die Veränderung am maximalen Beziehungswert angibt (?)
+29.Das Schlüsselwort "defaultFactionNameID" gefolgt von einem Eintragsnamen, einer Art "allgemeinem Fraktionsnamen", im Hauptspiel "IDS_PLAYERFACTIONNAME_LOYALIST" oder "IDS_PLAYERFACTIONNAME_REBEL"
+
+SCHIFFSDATEIEN (CAPITALSHIP_XYZ.entity)
+1. Das Dateiformat (z. B. "TXT", "TXT2"). Steht da irgendwas anderes, müssen wir es mit ConvertData_Rebellion.exe umwandeln (habe Batchdateien dafür geschrieben, lies die Anleitung!)
+2. Die folgenden Zeilen:
+	SinsArchiveVersion 194
+	entityType "CapitalShip"
+3. Das Schlüsselwort "ability:0" gefolgt vom Namen einer Fähigkeitendatei (AbilityXyz) ohne Dateiendung in doppelten Anführungsstrichen ODER "" für keine Fähigkeit
+4. Das Schlüsselwort "ability:1" gefolgt vom Namen einer Fähigkeitendatei (AbilityXyz) ohne Dateiendung in doppelten Anführungsstrichen ODER "" für keine Fähigkeit
+5. Das Schlüsselwort "ability:2" gefolgt vom Namen einer Fähigkeitendatei (AbilityXyz) ohne Dateiendung in doppelten Anführungsstrichen ODER "" für keine Fähigkeit
+6. Das Schlüsselwort "ability:3" gefolgt vom Namen einer Fähigkeitendatei (AbilityXyz) ohne Dateiendung in doppelten Anführungsstrichen ODER "" für keine Fähigkeit
+7. Das Schlüsselwort "ability:4" gefolgt vom Namen einer Fähigkeitendatei (AbilityXyz) ohne Dateiendung in doppelten Anführungsstrichen ODER "" für keine Fähigkeit
+8. Das Schlüsselwort "defaultAutoAttackRange" gefolgt vom Standard-Aktionsradius in doppelten Anführungsstrichen (wir sollten immer "GravityWell" nehmen...)
+9. Das Schlüsselwort "defaultAutoAttackOn" gefolgt von TRUE oder FALSE: ob Auto-Angriff am Anfang an sein soll
+10.Das Schlüsselwort "prefersToFocusFire" gefolgt von TRUE oder FALSE: ob das Schiff sein Feuer auf ein Schiff fokussieren soll (?)
+11.Das Schlüsselwort "usesFighterAttack" gefolgt von TRUE oder FALSE: ob das Schiff wie ein Jäger angreifen soll (?)
+12.Das Schlüsselwort "autoJoinFleetDefault" gefolgt von TRUE oder FALSE: Zweck unbekannt (in der Datei die ich untersucht habe TRUE)
+13.Das Schlüsselwort "canBomb" gefolgt von TRUE oder FALSE: ob das Schiff bombadieren kann
+14.Das Schlüsselwort "hasBombingLevels" gefolgt von TRUE oder FALSE: Ob es "Bombadiergeschosse" hat
+15.Das Schlüsselwort "baseDamage" gefolgt von einem Dezimalbruch, der den Schaden angibt
+16.Das Schlüsselwort "basePopulationKilled" gefolgt von einem Dezimalbruch, der die Anzahl der getöteten Bevölkerung beim Bombardieren angibt
+17.Das Schlüsselwort "bombingFreqTime" gefolgt von einem Dezimalbruch, der die Bombardiergeschwindigkeit angibt
+18.Das Schlüsselwort "baseRange" gefolgt von einem Dezimalbruch, der die Reichweite angibt
+19.Das Schlüsselwort "bombTransitTime" gefolgt von einem Dezimalbruch, der die Flugdauer eines Bombadiergeschosses angibt (?)
+20.Das Schlüsselwort "bombEffectCount" gefolgt von der Anzahl der Geschosse pro Bombardement (?)
+21.Das Schlüsselwort "bombEffectAngleVariance" gefolgt von einem Dezimalbruch, der die Auslenkung der Geschosse von der Schussrichtung angibt (?)
+22.Eine Liste, begonnen vom Schlüsselwort "bombEffectsDef" (die Listeneinträge sind dann eingerückt)
+	a) Das Schlüsselwort "weaponType" gefolgt von "Beam", "Projectile" oder "Missile" in doppelten Anführungsstrichen
+	b) Das Schlüsselwort "burstCount" gefolgt von einer Zahl: Wie viele "Bursts" auf einmal auftreten (keine Ahnung was das sind...)
+	c) Das Schlüsselwort "burstDelay" gefolgt von einem Dezimalbruch: Verzögerung zwischen "Bursts" (i. d. R. 0.000000)
+	d) Das Schlüsselwort "fireDelay" gefolgt von einem Dezimalbruch: Verzögerung beim Feuern (i. d. R. 0.000000)
+	e) Das Schlüsselwort "muzzleEffectName" gefolgt von einem Partikeleffekt in doppelten Anführungsstrichen
+	f) Das Schlüsselwort "muzzleSoundMinRespawnTime" gefolgt von einem Dezimalbruch, der den Abstand zwischen zwei Sounds angibt (?)
+	g) Eine Liste, begonnen vom Schlüsselwort "muzzleSounds" (die Listeneinträge sind dann eingerückt)
+		1) Das Schlüsselwort "soundCount" gefolgt von der Anzahl der folgenden Einträge
+		2) In jeder Zeile ein Eintrag der Form: Schlüsselwort "sound" gefolgt vom einem Sound in doppelten Anführungsstrichen oder ""
+	h) Das Schlüsselwort "hitEffectName" gefolgt von einem Partikeleffekt in doppelten Anführungsstrichen
+	i) Eine Liste, begonnen vom Schlüsselwort "hitHullEffectSounds" (die Listeneinträge sind dann eingerückt)
+		1) Das Schlüsselwort "soundCount" gefolgt von der Anzahl der folgenden Einträge
+		2) In jeder Zeile ein Eintrag der Form: Schlüsselwort "sound" gefolgt vom einem Sound in doppelten Anführungsstrichen oder ""
+	j) Eine Liste, begonnen vom Schlüsselwort "hitShieldsEffectSounds" (die Listeneinträge sind dann eingerückt)
+		1) Das Schlüsselwort "soundCount" gefolgt von der Anzahl der folgenden Einträge
+		2) In jeder Zeile ein Eintrag der Form: Schlüsselwort "sound" gefolgt vom einem Sound in doppelten Anführungsstrichen oder ""
+----NUR FALLS es ein "Beam" ist:
+		k) Eine Liste, begonnen vom Schlüsselwort "beamEffectSounds" (die Listeneinträge sind dann eingerückt)
+			1) Das Schlüsselwort "soundCount" gefolgt von der Anzahl der folgenden Einträge
+			2) In jeder Zeile ein Eintrag der Form: Schlüsselwort "sound" gefolgt vom einem Sound in doppelten Anführungsstrichen oder ""
+		l) Das Schlüsselwort "beamGlowTextureName" gefolgt von einer Textur für den Rand des Strahls (vmtl. wird das transparent)
+		m) Das Schlüsselwort "beamCoreTextureName" gefolgt von einer Textur für das Strahlinnere
+		n) Das Schlüsselwort "beamWidth" gefolgt von einem Dezimalbruch, der den Strahldurchmesser angibt
+		o) Das Schlüsselwort "beamGlowColor" gefolgt von einer Hexadezimalzahl (z. B. ff0eadff) im Format RRGGBBAA (A = Alpha = Deckkraft)
+		p) Das Schlüsselwort "beamCoreColor" gefolgt von einer Hexadezimalzahl (z. B. ff0eadff) im Format RRGGBBAA (A = Alpha = Deckkraft)
+		q) Das Schlüsselwort "beamTilingRate" gefolgt von einer Zahl: Zweck unbekannt (in untersuchter Datei 3.000000)
+----NUR FALLS es ein "Projectile" ist:
+		r) Das Schlüsselwort "projectileTravelEffectName" gefolgt von einem Partikeleffekt in doppelten Anführungsstrichen
+----NUR FALLS es ein "Missile" ist:
+		s) Das Schlüsselwort "missileTravelEffectName" gefolgt von einem Partikelnamen für den Rauch der Rakete
+		t) Das Schlüsselwort "missileStartTurningDistance" gefolgt von einem Dezimalbruch, der wohl die (Dreh-?)Geschwindigkeit am Anfang angibt
+		u) Das Schlüsselwort "missileSlowTurnRate" gefolgt von einem Dezimalbruch, der die Drehgeschwindigkeit angibt
+		v) Das Schlüsselwort "missileMaxSlowTurnTime" gefolgt von einem Dezimalbruch, der die maximale Dauer für die Drehung angibt
+23.Das Schlüsselwort "mainViewIcon" gefolgt vom Namen eines Icons (dem Schiffsicon auf der Karte?) (wo liegt dieses Icon?)
+24.Eine Liste, begonnen vom Schlüsselwort "basePrice" (die Listeneinträge sind dann eingerückt)
+	a) Das Schlüsselwort "credits" gefolgt von einem Dezimalbruch, der den Preis in Credits angibt
+	b) Das Schlüsselwort "metal" gefolgt von einem Dezimalbruch, der den Preis in Metall angibt
+	c) Das Schlüsselwort "crystal" gefolgt von einem Dezimalbruch, der den Preis in Kristallen angibt
+25.Das Schlüsselwort "slotCount" gefolgt von einem Dezimalbruch, der die nötige Flottenkapazität angibt
+26.Das Schlüsselwort "BuildTime" gefolgt von einem Dezimalbruch, der die Bauzeit angibt, vmtl. in Sekunden
+27.Eine Liste, begonnen vom Schlüsselwort "MaxHullPoints" (die Listeneinträge sind dann eingerückt)
+	a) Das Schlüsselwort "StartValue" gefolgt von einem Dezimalbruch, der die maximale Hülle für Lvl. 0 angibt
+	b) Das Schlüsselwort "ValueIncreasePerLevel" gefolgt von einem Dezimalbruch, der den Anstieg pro Lvl. angibt
+28.Eine Liste nach dem Format 27. aber mit "MaxShieldPoints" für Schilde
+29.Eine Liste nach dem Format 27. aber mit "HullPointRestoreRate" für Heilung
+30.Eine Liste nach dem Format 27. aber mit "ShieldPointRestoreRate" für Schildregeneration
+31.Eine Liste nach dem Format 27. aber mit "ArmorPointsFromExperience" für Panzerung
+32.Eine Liste nach dem Format 27. aber mit "maxMitigation" (Mitigation heißt "Linderung")
+33.Eine Liste nach dem Format 27. aber mit "MaxAntiMatter" für Antimaterie
+34.Eine Liste nach dem Format 27. aber mit "AntiMatterRestoreRate" für Antimaterieregeneration
+35.Eine Liste nach dem Format 27. aber mit "CultureProtectRate" für das Abhalten fremder Kultur (?)
+36.Das Schlüsselwort "NameStringID" gefolgt von dem Eintragsnamen des Schiffsnamen in der English.str in doppelten Anführungsstrichen
+37.Das Schlüsselwort "DescriptionStringID" gefolgt von dem Eintragsnamen der Schiffsbeschreibung in der English.str in doppelten Anführungsstrichen
+38.Das Schlüsselwort "picture" gefolgt von einem Bildnamen in doppelten Anführungsstrichen
+39.Eine Liste, begonnen vom Schlüsselwort "Prerequisites" (die Listeneinträge sind dann eingerückt)
+	a) Das Schlüsselwort "NumResearchPrerequisites" gefolgt von einer Zahl, die die Anzahl der folgenden Listen angibt
+	b) Einige Listen, begonnen von "ResearchPrerequisite" (die Listeneinträge sind dann eingerückt)
+		1) Das Schlüsselwort "Subject" gefolgt von einem Forschungsnamen in doppelten Anführungsstrichen
+		2) Das Schlüsselwort "Level" gefolgt von einer Zahl, die das benötigte Level angibt
+	c) Das Schlüsselwort "RequiredFactionNameID" gefolgt von "": Zweck unbekannt
+	d) Das Schlüsselwort "RequiredCompletedResearchSubjects" gefolgt von 0: Zweck unbekannt
+40.Das Schlüsselwort "numRandomDebrisLarge" gefolgt von einer Zahl, die angibt, wie viele große Schrottteile beim Tod spawnen
+41.Das Schlüsselwort "numRandomDebrisSmall" gefolgt von einer Zahl, die angibt, wie viele kleine Schrottteile beim Tod spawnen
+42.Das Schlüsselwort "numSpecificDebris" gefolgt von einer Zahl, die die Anzahl der folgenden Einträge angibt
+43.Einträge der Form: Das Schlüsselwort "specificDebrisMeshName" gefolgt von einem Modellnamen, der ein Schrottteil angibt
+44.Das Schlüsselwort "armorType" gefolgt von "CapitalShip" in doppelten Anführungsstrichen
+45.Das Schlüsselwort "hudIcon" gefolgt von einem Bildnamen in doppelten Anführungsstrichen
+46.Das Schlüsselwort "smallHudIcon" gefolgt von einem Bildnamen in doppelten Anführungsstrichen
+47.Das Schlüsselwort "infoCardIcon" gefolgt von einem Bildnamen in doppelten Anführungsstrichen
+48.Das Schlüsselwort "minZoomDistanceMult" gefolgt von einem Dezimalbruch: Zweck unbekannt
+49.Das Schlüsselwort "NumWeapons" gefolgt von der Anzahl der folgenden Listen
+50.Einige Listen, begonnen von "Weapon" (die Listeneinträge sind dann eingerückt)
+	a) Das Schlüsselwort "WeaponType" gefolgt von "Beam", "Projectile" oder "Missile" in doppelten Anführungsstrichen
+	b) Eine Liste, begonnen von "damageEnums" (die Listeneinträge sind dann eingerückt)
+		1) Das Schlüsselwort "AttackType" gefolgt von "CAPITALSHIP" in doppelten Anführungsstrichen
+		2) Das Schlüsselwort "DamageAffectType" gefolgt von "AFFECTS_SHIELD_AND_HULL" in doppelten Anführungsstrichen
+		3) Das Schlüsselwort "DamageApplyType" gefolgt von "BACKLOAD" oder "OVERTIME" in doppelten Anführungsstrichen
+		4) Das Schlüsselwort "DamageType" gefolgt von "ENERGY" oder "PHYSICAL in doppelten Anführungsstrichen
+		5) Das Schlüsselwort "WeaponClassType" gefolgt von einer "Waffenklasse" (weitere Recherche nötig) in doppelten Anführungsstrichen
+	c) Das Schlüsselwort "DamagePerBank:FRONT" gefolgt von einem Dezimalbruch, der den Schaden durch die vordere Waffenbank angibt
+	d) Das Schlüsselwort "DamagePerBank:BACK" gefolgt von einem Dezimalbruch, der den Schaden durch die hintere Waffenbank angibt
+	e) Das Schlüsselwort "DamagePerBank:LEFT" gefolgt von einem Dezimalbruch, der den Schaden durch die linke Waffenbank angibt
+	f) Das Schlüsselwort "DamagePerBank:RIGHT" gefolgt von einem Dezimalbruch, der den Schaden durch die rechte Waffenbank angibt
+	g) Das Schlüsselwort "Range" gefolgt von einem Dezimalbruch, der die Reichweite angibt
+	h) Das Schlüsselwort "PreBuffCooldownTime" gefolgt von einem Dezimalbruch, der den Cooldown angibt
+	i) Das Schlüsselwort "CanFireAtFighter" gefolgt von TRUE oder FALSE: ob man damit auf Jäger feuern kann
+	j) Das Schlüsselwort "SynchronizedTargeting" gefolgt von TRUE oder FALSE: ob das sich mit anderen Schiffen synchronisiert (?)
+	k) Das Schlüsselwort "PointStaggerDelay" gefolgt von einem Dezimalbruch: Zweck unbekannt
+	l) Das Schlüsselwort "TravelSpeed" gefolgt von einem Dezimalbruch, der die Geschwindigkeit des Projektils (Bei "Beam" 0.000000) angibt
+	m) Das Schlüsselwort "Duration" gefolgt von einem Dezimalbruch, der die Dauer des Strahls angibt (Bei nicht-"Beam" 0.000000)
+	n) Das Schlüsselwort "fireConstraintType" gefolgt von einer "Einschränkung" in doppelten Anführungsstrichen. Bei allem was ich gesehen habe "CanAlwaysFire"
+	o) Eine Liste, begonnen von "WeaponEffects", in der Form von 22. mit dem gleichen Waffentyp
+51.Das Schlüsselwort "m_weaponIndexForRange" gefolgt von 0: Zweck unbekannt
+52.Das Schlüsselwort "firingAlignmentType" i. d. R. gefolgt von "Default" in doppelten Anführungsstrichen
+53.Das Schlüsselwort "TargetCountPerBank:FRONT" gefolgt von einer Zahl, der Anzahl der Ziele, die die vordere Bank angreifen kann
+54.Das Schlüsselwort "TargetCountPerBank:BACK" gefolgt von einer Zahl, der Anzahl der Ziele, die die hintere Bank angreifen kann
+55.Das Schlüsselwort "TargetCountPerBank:LEFT" gefolgt von einer Zahl, der Anzahl der Ziele, die die linke Bank angreifen kann
+56.Das Schlüsselwort "TargetCountPerBank:RIGHT" gefolgt von einer Zahl, der Anzahl der Ziele, die die rechte Bank angreifen kann
+57.Das Schlüsselwort "canOnlyTargetStructures" gefolgt von TRUE oder FALSE: ob das Schiff nur Gebäude angreifen kann
+58.Das Schlüsselwort "mass" gefolgt von einem Dezimalbruch, der vmtl. für die Trägheit wichtig ist
+59.Das Schlüsselwort "ShieldMeshName" gefolgt von dem Modellnamen für den Schild in doppelten Anführungsstrichen
+60.Das Schlüsselwort "renderShield" gefolgt von TRUE oder FALSE: ob das Schild sichtbar ist
+61.Das Schlüsselwort "maxAccelerationLinear" gefolgt von einem Dezimalbruch, der die Beschleunigung angibt
+62.Das Schlüsselwort "maxAccelerationStrafe" gefolgt von einem Dezimalbruch, der die Beschleunigung zur Seite angibt
+63.Das Schlüsselwort "maxDecelerationLinear" gefolgt von einem Dezimalbruch, der die Bremsgeschwindigkeit angibt
+64.Das Schlüsselwort "maxAccelerationAngular" gefolgt von einem Dezimalbruch, der die Drehgeschwindigkeit angibt (?)
+65.Das Schlüsselwort "maxDecelerationLinear" gefolgt von einem Dezimalbruch, der die Drehbremsgeschwindigkeit angibt (?)
+66.Das Schlüsselwort "maxSpeedLinear" gefolgt von einem Dezimalbruch, der die Höchstgeschwindigkeit angibt
+67.Das Schlüsselwort "maxRollRate" gefolgt von einem Dezimalbruch, der die Neigungsgeschwindigkeit angibt
+68.Das Schlüsselwort "maxRollAngle" gefolgt von einem Dezimalbruch, der die maximale Neigung angibt
+69.Das Schlüsselwort "useCustomHyperspaceEffects" gefolgt von TRUE oder FALSE: Zweck unbekannt
+70.Eine Liste, begonnen von "effects" (die Listeneinträge sind dann eingerückt)
+   Hat etwas mit Partikeln zu tun, würde ich aus Vanilla kopieren
+71.Das Schlüsselwort "squadTypeEntityDef:0" gefolgt von einem Dateinamen für einen Jägertyp ohne Dateiendung in doppelten Anführungsstrichen (oder "")
+72.Das Schlüsselwort "squadAntiMatterCost:0" gefolgt von einem Dezimalbruch: Antimateriekosten dafür
+73.Das Schlüsselwort "squadTypeEntityDef:1" gefolgt von einem Dateinamen für einen Jägertyp ohne Dateiendung in doppelten Anführungsstrichen (oder "")
+74.Das Schlüsselwort "squadAntiMatterCost:1" gefolgt von einem Dezimalbruch: Antimateriekosten dafür
+75.Das Schlüsselwort "squadTypeEntityDef:2" gefolgt von einem Dateinamen für einen Jägertyp ohne Dateiendung in doppelten Anführungsstrichen (oder "")
+76.Das Schlüsselwort "squadAntiMatterCost:2" gefolgt von einem Dezimalbruch: Antimateriekosten dafür
+77.Das Schlüsselwort "squadTypeEntityDef:3" gefolgt von einem Dateinamen für einen Jägertyp ohne Dateiendung in doppelten Anführungsstrichen (oder "")
+78.Das Schlüsselwort "squadAntiMatterCost:3" gefolgt von einem Dezimalbruch: Antimateriekosten dafür
+79.Nun kommt sehr viel was mit Sounds zu tun hat,
+   würde ich aus Vanilla kopieren und dann evtl. bearbeiten.
+80.Das Schlüsselwort "MeshNameInfoCount" gefolgt von der Anzahl der folgenden Listen
+81.Einige Listen, begonnen mit "MeshNameInfo" (die Listeneinträge sind dann eingerückt)
+	a) Das Schlüsselwort "meshName" gefolgt von einem Modellnamen
+	b) Das Schlüsselwort "criteriaType" gefolgt von einem "Kriterium" in doppelten Anführungsstrichen, i. d. R. "None"
+82.Das Schlüsselwort "meshNameIncreasedEffectName" gefolgt von "": Zweck unbekannt
+83.Das Schlüsselwort "meshNameDecreasedEffectName" gefolgt von "": Zweck unbekannt
+84.Das Schlüsselwort "ExhaustParticleSystemName" gefolgt von einem Partikelnamen (?) in doppelten Anführungsstrichen: vmtl. die Rauchpartikel
+85.Das Schlüsselwort "ExplosionName" gefolgt von einem Partikelnamen (?) in doppelten Anführungsstrichen, für die Explosion, i. d. R. "CapitalShip0"
+86.Eine Liste nach dem Format 27. aber mit "CommandPoints" für Kommandopunkte (Julius, was ist das?)
+87.Eine Liste nach dem Format 27. aber mit "weaponCooldownDecreasePerc" für die Abnahme des Waffencooldowns mit dem Level
+88.Eine Liste nach dem Format 27. aber mit "weaponDamageIncreasePerc" für die Zunahme des Schadens mit dem Level
+89.Das Schlüsselwort "EngineSoundID" gefolgt von einem Soundnamen für den Antriebssound, der dauernd spielt
+90.Das Schlüsselwort "formationRank" gefolgt von einer Zahl: Zweck unbekannt, in allen untersuchten Dateien 0
+91.Das Schlüsselwort "minShadow" gefolgt von einem Dezimalbruch, der wohl die minimale Schattengröße angibt
+92.Das Schlüsselwort "maxShadow" gefolgt von einem Dezimalbruch, der wohl die maximale Schattengröße angibt
