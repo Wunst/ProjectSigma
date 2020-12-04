@@ -1,0 +1,246 @@
+TXT2
+SinsArchiveVersion 194
+entityType "CapitalShip"
+ability:0 ""
+ability:1 ""
+ability:2 ""
+ability:3 ""
+ability:4 ""
+defaultAutoAttackRange "GravityWell"
+defaultAutoAttackOn TRUE
+prefersToFocusFire TRUE
+usesFighterAttack FALSE
+autoJoinFleetDefault TRUE
+canBomb TRUE
+hasBombingLevels TRUE
+baseDamage ----
+basePopulationKilled ----
+bombingFreqTime 12.000000
+baseRange ----
+bombTransitTime ----
+bombEffectCount 3
+bombEffectAngleVariance 10.000000
+bombEffectsDef
+	weaponType "Projectile"
+	burstCount 3
+	burstDelay 0.000000
+	fireDelay 0.000000
+	muzzleEffectName "Weapon_TechCapitalPlanetBombing_Muzzle"
+	muzzleSoundMinRespawnTime 0.100000
+	muzzleSounds
+		soundCount 1
+		sound "WEAPON_TECH_PLANETBOMB_MUZZLE"
+	hitEffectName "Weapon_TechCapitalPlanetBombing_Hit"
+	hitHullEffectSounds
+		soundCount 3
+		sound "EXPLOSION_SUB4"
+		sound "EXPLOSION_SUB4_ALT1"
+		sound "EXPLOSION_SUB4_ALT2"
+	hitShieldsEffectSounds
+		soundCount 3
+		sound "EXPLOSION_SUB4"
+		sound "EXPLOSION_SUB4_ALT1"
+		sound "EXPLOSION_SUB4_ALT2"
+	projectileTravelEffectName "Weapon_TechCapitalPlanetBombing_Travel"
+mainViewIcon "MAINVIEWICON_CAPITALSHIP_EXILEBALANCED"
+basePrice
+	credits ----
+	metal ----
+	crystal ----
+slotCount 50.000000
+BuildTime 80.000000
+MaxHullPoints
+	StartValue ----
+	ValueIncreasePerLevel ----
+MaxShieldPoints
+	StartValue ----
+	ValueIncreasePerLevel ----
+ShieldPointRestoreRate
+	StartValue ----
+	ValueIncreasePerLevel ----
+ArmorPointsFromExperience
+	StartValue ----
+	ValueIncreasePerLevel ----
+maxMitigation
+	StartValue ----
+	ValueIncreasePerLevel ----
+MaxAntiMatter
+	StartValue ----
+	ValueIncreasePerLevel ----
+AntiMatterRestoreRate
+	StartValue ----
+	ValueIncreasePerLevel ----
+CultureProtectRate
+	StartValue ----
+	ValueIncreasePerLevel ----
+NameStringID "IDS_CAPITALSHIP_EXILEBALANCED_NAME"
+DescriptionStringID "IDS_CAPITALSHIP_EXILEBALANCED_NAME"
+picture "CAPITALSHIPPICTURE_EXILEBALANCED"
+Prerequisites
+	NumResearchPrerequisites 0
+	RequiredFactionNameID ""
+	RequiredCompletedResearchSubjects 0
+numRandomDebrisLarge 1
+numRandomDebrisSmall 5
+numSpecificDebris 0
+armorType "CapitalShip"
+hudIcon "HUDICON_CAPITALSHIP_EXILEBALANCED"
+smallHudIcon "MAINVIEWICON_CAPITALSHIP_EXILEBALANCED"
+infoCardIcon "INFOCARDICON_CAPITALSHIP_EXILEBALANCED"
+minZoomDistanceMult 1.000000
+NumWeapons 2
+Weapon
+	WeaponType "Projectile"
+	damageEnums
+		AttackType "CAPITALSHIP"
+		DamageAffectType "AFFECTS_SHIELD_AND_HULL"
+		DamageApplyType "BACKLOAD"
+		DamageType "PHYSICAL"
+		WeaponClassType "RAILGUN"
+	DamagePerBank:FRONT 80.000000
+	DamagePerBank:BACK 0.000000
+	DamagePerBank:LEFT 70.000000
+	DamagePerBank:RIGHT 70.000000
+	Range 4500.000000
+	PreBuffCooldownTime 6.000000
+	CanFireAtFighter FALSE
+	SynchronizedTargeting TRUE
+	PointStaggerDelay 0.200000
+	TravelSpeed 5500.000000
+	Duration 0.000000
+	fireConstraintType "CanAlwaysFire"
+	WeaponEffects
+		weaponType "Projectile"
+		burstCount 1
+		burstDelay 0.000000
+		fireDelay 0.000000
+		muzzleEffectName "Weapon_TechRebel_TitanRailgun_Muzzle"
+		muzzleSoundMinRespawnTime 0.100000
+		muzzleSounds
+			soundCount 1
+			sound "Weapon_TechCapitalLaserMedium_Muzzle"
+		hitEffectName "Weapon_TechRebel_TitanRailgun_Hit"
+		hitHullEffectSounds
+			soundCount 1
+			sound "WEAPONIMPACT_GENERICHEAVY_HITHULL"
+		hitShieldsEffectSounds
+			soundCount 1
+			sound "WEAPONIMPACT_GENERICHEAVY_HITSHIELDS"
+		projectileTravelEffectName "Weapon_TechRebel_TitanRailgun_Travel"
+Weapon
+	WeaponType "Beam"
+	damageEnums
+		AttackType "CAPITALSHIP"
+		DamageAffectType "AFFECTS_SHIELD_AND_HULL"
+		DamageApplyType "OVERTIME"
+		DamageType "ENERGY"
+		WeaponClassType "CHAOSBOLT"
+	DamagePerBank:FRONT 120.000000
+	DamagePerBank:BACK 0.000000
+	DamagePerBank:LEFT 0.000000
+	DamagePerBank:RIGHT 0.000000
+	Range 6000.000000
+	PreBuffCooldownTime 10.000000
+	CanFireAtFighter FALSE
+	SynchronizedTargeting TRUE
+	PointStaggerDelay 0.500000
+	TravelSpeed 0.000000
+	Duration 10.000000
+	fireConstraintType "Research"
+	researchPrerequisites
+		NumResearchPrerequisites 1
+		ResearchPrerequisite
+			Subject "RESEARCHSUBJECT_EXILE_MODULAR_BEAM"
+			Level 1
+		RequiredFactionNameID ""
+		RequiredCompletedResearchSubjects 0
+	WeaponEffects
+		weaponType "Beam"
+		burstCount 1
+		burstDelay 0.000000
+		fireDelay 0.000000
+		muzzleEffectName "Weapon_Psi_BeamCapital_Muzzle"
+		muzzleSoundMinRespawnTime 0.100000
+		muzzleSounds
+			soundCount 1
+			sound ""
+		hitEffectName "Weapon_Psi_BeamCapital_Hit"
+		hitHullEffectSounds
+			soundCount 1
+			sound ""
+		hitShieldsEffectSounds
+			soundCount 1
+			sound ""
+		beamEffectSounds
+			soundCount 1
+			sound "WEAPON_PSICAPITALBEAMHEAVY_TRAVEL"
+		beamGlowTextureName "PsiCapitalBeam_Glow"
+		beamCoreTextureName "PsiCapitalBeam_Core"
+		beamWidth 75.000000
+		beamGlowColor ff0000ff
+		beamCoreColor 000000ff
+		beamTilingRate 3.000000
+m_weaponIndexForRange 0
+firingAlignmentType "Default"
+TargetCountPerBank:FRONT 1
+TargetCountPerBank:BACK 0
+TargetCountPerBank:LEFT 1
+TargetCountPerBank:RIGHT 1
+canOnlyTargetStructures FALSE
+mass 10000.000000
+ShieldMeshName "CapitalShip_PsiBattleship2_Shield"
+renderShield TRUE
+maxAccelerationLinear 100.000000
+maxAccelerationStrafe 10.000000
+maxDecelerationLinear 600.000000
+maxAccelerationAngular 2.000000
+maxDecelerationLinear 10.000000
+maxSpeedLinear 500.000000
+maxRollRate 4.000000
+maxRollAngle 45.000000
+useCustomHyperspaceEffects FALSE
+squadTypeEntityDef:0 "SQUAD_EXILE_FIGHTER"
+squadAntiMatterCost:0 0.000000
+squadTypeEntityDef:1 "SQUAD_EXILE_BOMBER"
+squadAntiMatterCost:1 0.000000
+squadTypeEntityDef:2 ""
+squadAntiMatterCost:2 0.000000
+squadTypeEntityDef:3 ""
+squadAntiMatterCost:3 0.000000
+NumSoundsFor:ONATTACKORDERISSUED 3
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONATTACKORDERISSUED_0"
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONATTACKORDERISSUED_1"
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONATTACKORDERISSUED_2"
+NumSoundsFor:ONCREATION 1
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONCREATION_0"
+NumSoundsFor:ONGENERALORDERISSUED 3
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONGENERALORDERISSUED_0"
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONGENERALORDERISSUED_1"
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONGENERALORDERISSUED_2"
+NumSoundsFor:ONSELECTED 3
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONSELECTED_0"
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONSELECTED_1"
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONSELECTED_2"
+NumSoundsFor:ONSTARTPHASEJUMP 1
+SoundID "CAPITALSHIP_PSIBATTLESHIP2_ONSTARTPHASEJUMP_0"
+MeshNameInfoCount 1
+MeshNameInfo
+	meshName "CapitalShip_PsiBattleship2"
+	criteriaType "None"
+meshNameIncreasedEffectName ""
+meshNameDecreasedEffectName ""
+ExhaustParticleSystemName "Exhaust_PsiBattleship"
+ExplosionName "CapitalShip0"
+CommandPoints
+	StartValue 0.800000
+	ValueIncreasePerLevel 0.200000
+weaponCooldownDecreasePerc
+	StartValue 0.000000
+	ValueIncreasePerLevel 0.025000
+weaponDamageIncreasePerc
+	StartValue 0.000000
+	ValueIncreasePerLevel 0.056000
+EngineSoundID "ENGINE_PSICAPITALSHIP"
+formationRank 0
+minShadow 0.000000
+maxShadow 1.000000
