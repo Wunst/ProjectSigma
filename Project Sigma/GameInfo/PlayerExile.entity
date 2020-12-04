@@ -49,6 +49,7 @@ entities
 			count 5
 			entityDefName "FRIGATE_EXILE_DEATH"
 			entityDefName "FRIGATE_EXILE_FLAK"
+			entityDefName "FRIGATE_EXILE_CANNIBAL"
 			entityDefName "FRIGATE_EXILE_BALANCED"
 			entityDefName "FRIGATE_EXILE_DISCOVERY"
 			entityDefName "FRIGATE_EXILE_COLONISER"
@@ -57,6 +58,8 @@ entities
 			entityDefName "CRUISER_EXILE_LIGHT_CARRIER"
 			entityDefName "CRUISER_EXILE_ARMED_SEARCHER"
 			entityDefName "CRUISER_EXILE_SHIELDS"
+			entityDefName "CRUISER_EXILE_CANNON_FODDER"
+			entityDefName "FRIGATE_EXILE_TANK"
 		NotOnPage
 			count 3
 			entityDefName "FRIGATE_EXILE_CONSTRUCTOR"
