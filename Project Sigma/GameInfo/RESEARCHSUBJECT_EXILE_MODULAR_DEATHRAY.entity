@@ -1,0 +1,35 @@
+TXT2
+SinsArchiveVersion 194
+entityType "ResearchSubject"
+hudIcon "HUDICON_RESEARCHSUBJECT_EXILE_MODULAR_DEATHRAY"
+smallHudIcon "HUDICON_RESEARCHSUBJECT_EXILE_MODULAR_DEATHRAY"
+infoCardIcon ""
+NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_DEATHRAY_NAME"
+DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_DEATHRAY_DESCRIPTION"
+researchWindowLocation
+	block 0
+	pos [ , ]
+ResearchField "Modular"
+Prerequisites
+	NumResearchPrerequisites 1
+	ResearchPrerequisite
+		Subject "RESEARCHSUBJECT_EXILE_MODULAR_BEAM"
+		Level 2
+	RequiredFactionNameID ""
+	RequiredCompletedResearchSubjects 0
+MinimumArtifactLevel -1
+BaseUpgradeTime 100.000000
+PerLevelUpgradeTime 10.000000
+BaseCost
+	credits 2000.000000
+	metal 450.000000
+	crystal 300.000000
+Tier 5
+onlyWorksIfTierLabsExist FALSE
+MaxNumResearchLevels 1
+priority 1.000000
+researchBoolModifiers 0
+researchFloatModifiers 0
+artifactPicture ""
+uniqueOverlayBrush ""
+dlcId 0

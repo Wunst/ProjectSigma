@@ -1,0 +1,44 @@
+TXT2
+SinsArchiveVersion 194
+entityType "ResearchSubject"
+hudIcon "HUDICON_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILECOOLDOWN"
+smallHudIcon "HUDICON_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILECOOLDOWN"
+infoCardIcon ""
+NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILECOOLDOWN_NAME"
+DescriptionStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILECOOLDOWN_DESCRIPTION"
+researchWindowLocation
+	block 0
+	pos [  ,  ]
+ResearchField "Modular"
+Prerequisites
+	NumResearchPrerequisites 1
+	ResearchPrerequisite
+		Subject "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+		Level 2
+	RequiredFactionNameID ""
+	RequiredCompletedResearchSubjects 0
+MinimumArtifactLevel -1
+BaseUpgradeTime 60.000000
+PerLevelUpgradeTime 10.000000
+BaseCost
+	credits 1250.000000
+	metal 250.000000
+	crystal 300.000000
+PerLevelCostIncrease
+	credits 150.000000
+	metal 55.000000
+	crystal 50.000000
+Tier 3
+onlyWorksIfTierLabsExist FALSE
+MaxNumResearchLevels 5
+priority 1.000000
+researchBoolModifiers 0
+researchFloatModifiers 1
+researchModifier
+	modifierType "WeaponRateOfFireAdjustment"
+	baseValue 0.000000
+	perLevelValue 0.025000
+	linkedWeaponClass "RAILGUN"
+artifactPicture ""
+uniqueOverlayBrush ""
+dlcId 0

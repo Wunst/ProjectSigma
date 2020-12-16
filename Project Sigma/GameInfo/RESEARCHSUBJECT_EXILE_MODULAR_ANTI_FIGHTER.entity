@@ -1,0 +1,39 @@
+TXT2
+SinsArchiveVersion 194
+entityType "ResearchSubject"
+hudIcon "HUDICON_RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER"
+smallHudIcon "HUDICON_RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER"
+infoCardIcon ""
+NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER_NAME"
+DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER_DESCRIPTION"
+researchWindowLocation
+	block 0
+	pos [ , ]
+ResearchField "Modular"
+Prerequisites
+	NumResearchPrerequisites 1
+	ResearchPrerequisite
+		Subject "RESEARCHSUBJECT_EXILE_MODULAR_ADDITIONAL_BANKS"
+	RequiredFactionNameID ""
+	RequiredCompletedResearchSubjects 0
+MinimumArtifactLevel -1
+BaseUpgradeTime 90.000000
+PerLevelUpgradeTime 10.000000
+BaseCost
+	credits 500.000000
+	metal 50.000000
+	crystal 25.000000
+Tier 3
+onlyWorksIfTierLabsExist FALSE
+MaxNumResearchLevels 2
+priority 1.000000
+researchBoolModifiers 0
+researchFloatModifiers 1
+researchModifier
+	modifierType "WeaponDamageAdjustment"
+	baseValue 0.000000
+	perLevelValue 0.100000
+	linkedWeaponClass "FLAK"
+artifactPicture ""
+uniqueOverlayBrush ""
+dlcId 0
