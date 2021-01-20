@@ -78,7 +78,7 @@ picture "TITANPICTURE_EXILE"
 Prerequisites
 	NumResearchPrerequisites 1
 	ResearchPrerequisite 1
-		Subject "RESEARCHSUBJECT_TITANACCESS_EXILE_1"
+		Subject "RESEARCHSUBJECT_EXILE_TITAN1"
 		Level 1
 	RequiredFactionNameID ""
 statCountType "TITAN"
