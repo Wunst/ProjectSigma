@@ -54,12 +54,12 @@ entities
 			entityDefName "FRIGATE_EXILE_DISCOVERY"
 			entityDefName "FRIGATE_EXILE_COLONISER"
 		Page:1
-			count 3
+			count 5
 			entityDefName "CRUISER_EXILE_LIGHT_CARRIER"
 			entityDefName "CRUISER_EXILE_ARMED_SEARCHER"
 			entityDefName "CRUISER_EXILE_SHIELDS"
 			entityDefName "CRUISER_EXILE_CANNON_FODDER"
-			entityDefName "FRIGATE_EXILE_TANK"
+			entityDefName "CRUISER_EXILE_TANK"
 		NotOnPage
 			count 3
 			entityDefName "FRIGATE_EXILE_CONSTRUCTOR"
