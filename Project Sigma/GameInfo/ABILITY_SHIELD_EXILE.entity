@@ -1,0 +1,45 @@
+TXT2
+SinsArchiveVersion 194
+entityType "Ability"
+buffInstantActionType "ApplyBuffToSelf"
+toggleStateOnNameStringID "IDS_TOGGLE_ABILITY_SHIELD"
+toggleStateOnDescStringID "IDS_TOGGLE_ABILITY_SHIELD_DESC"
+needsToFaceTarget false
+canCollideWithTarget false
+moveThruTarget false
+isUltimateAbility false
+maxNumLevels 1
+levelSourceType "FixedLevel0"
+sourcePropertyType "AbilityALevel"
+aiUseTime "OnlyWhenTakingDamage"
+aiUseTargetCondition Condition
+isAutoCastAvailable "ShieldDamageExceedsAmount"
+onlyAutoCastWhenTargetShieldDamageExceedsAmount TRUE
+	Level:0 300.000000
+    Level:1 300.000000
+    Level:2 300.000000
+    Level:3 300.000000
+isAutoCastOnByDefault FALSE
+pickRandomPlanetToExploreForAutoCastTarget FALSE
+ignoreNonCombatShipsForAutoCastTarget TRUE
+onlyAutoCastWhenDamageTakenExceedsPerc: 0.200000
+useCostType "AntiMatter"
+	antiMatterCost
+        Level:0 ---
+        Level:1 ---
+        Level:2 ---
+        Level:3 ---
+    cooldownTime
+        Level:0 35.000000
+        Level:1 35.000000
+        Level:2 35.000000
+        Level:3 35.000000
+researchPrerequisites
+    NumResearchPrerequisites 0
+    RequiredFactionNameID ""
+    RequiredCompletedResearchSubjects 0
+nameStringID "IDS_ABILITY_SHIELD_NAME"
+descStringID "IDS_ABILITY_SHIELD_DESC"
+hudIcon "HUDICON_ABILITY_SHIELD_DESC"
+smallHudIcon "HUDICON_ABILITY_SHIELD_DESC"
+infoCardIcon "" 
