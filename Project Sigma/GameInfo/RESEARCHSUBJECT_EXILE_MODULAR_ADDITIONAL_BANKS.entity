@@ -1,14 +1,14 @@
 TXT2
 SinsArchiveVersion 194
 entityType "ResearchSubject"
-hudIcon "HUDICON_RESEARCHSUBJECT_EXILE_MODULAR_ADDITIONAL_BANKS"
-smallHudIcon "HUDICON_RESEARCHSUBJECT_EXILE_MODULAR_ADDITIONAL_BANKS"
+hudIcon "HUDICON_RESEARCHSUBJECT_WIP"
+smallHudIcon "HUDICON_RESEARCHSUBJECT_WIP"
 infoCardIcon ""
 NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_ADDITIONAL_BANKS_NAME"
 DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_ADDITIONAL_BANKS_DESCRIPTION"
 researchWindowLocation
 	block 0
-	pos [ , ]
+	pos [ 1 , 2 ]
 ResearchField "Modular"
 Prerequisites
 	NumResearchPrerequisites 0

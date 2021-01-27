@@ -1,0 +1,22 @@
+TXT
+onlyLoadOnDemand FALSE
+brushCount 1
+brush
+	name "HUDICON_RESEARCHSUBJECT_WIP"
+	content "States"
+	Disabled
+		fileName "WIP_RESEARCH"
+		pixelBox [ 0, 64, 47, 31 ]
+	Pressed
+		fileName "WIP_RESEARCH"
+		pixelBox [ 0, 0, 47, 31 ]
+	CursorOver
+		fileName "WIP_RESEARCH"
+		pixelBox [ 0, 32, 47, 31 ]
+	Focused
+		fileName "WIP_RESEARCH"
+		pixelBox [ 0, 32, 47, 31 ]
+	Normal
+		fileName "WIP_RESEARCH"
+		pixelBox [ 0, 0, 47, 31 ]
+
