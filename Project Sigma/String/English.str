@@ -23460,4 +23460,199 @@ StringInfo
 StringInfo
 	ID "IDS_RANDOMEVENT_RESOURCEBOOM_NAME"
 	Value "Ware Aufschwung"
-	
+StringInfo
+	ID "IDS_PLAYERRACENAME_EXILE"
+	Value "Vol'tek Exilants"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE00"
+	Value "VSS Kra'sinth"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE01"
+	Value "VSS Vulthoon"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE02"
+	Value "VSS Pat'laff"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE03"
+	Value "VSS Ordrim"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE04"
+	Value "VSS Sarghul"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE05"
+	Value "VSS Partiq"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE06"
+	Value "VSS Se'antep"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE07"
+	Value "VSS Shag'l'ferr"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE08"
+	Value "VSS Arr'tik"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE09"
+	Value "VSS Niggurath"
+StringInfo
+	ID "IDS_CAPITALSHIPNAME_EXILE10"
+	Value "VSS Ah'hitik"
+StringInfo
+	ID "IDS_STARBASENAME_EXILE00"
+	Value "SB Ratt'nok 05"
+StringInfo
+	ID "IDS_STARBASENAME_EXILE01"
+	Value "SB Y'leth 04"
+StringInfo
+	ID "IDS_STARBASENAME_EXILE02"
+	Value "SB Dar'tak 12"
+StringInfo
+	ID "IDS_STARBASENAME_EXILE03"
+	Value "SB Vorlont 07"
+StringInfo
+	ID "IDS_STARBASENAME_EXILE04"
+	Value "SB Takrun'tek 19"
+StringInfo
+	ID "IDS_STARBASENAME_EXILE05"
+	Value "SB Star'katt 08"
+StringInfo
+	ID "IDS_STARBASENAME_EXILE06"
+	Value "SB Astril 05"
+StringInfo
+	ID "IDS_EXILE_RESEARCHFIELD_VESSELS"
+	Value "Vessels"
+StringInfo
+	ID "IDS_EXILE_RESEARCHFIELD_MODULAR"
+	Value "Modular Technology"
+StringInfo
+	ID "IDS_EXILE_RESEARCHFIELD_COMMUNICATION"
+	Value "Communication"
+StringInfo
+	ID "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_FRIGATES"
+	Value "Light ships"
+StringInfo
+	ID "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_CAPITAL"
+	Value "Capital ships"
+StringInfo
+	ID "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_TAC_BUILDS"
+	Value "Tactical structures"
+StringInfo
+	ID "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_OFFENSE"
+	Value "Offensive"
+StringInfo
+	ID "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_DEFENSE"
+	Value "Defensive"
+StringInfo
+	ID "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_SUPPORT"
+	Value "Support"
+StringInfo
+	ID "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_DIPLOMACY"
+	Value "Diplomacy"
+StringInfo
+	ID "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_INTELLIGENCE"
+	Value "Intelligence"
+StringInfo
+	ID "IDS_PLAYER_AI_NAME_EXILE_0"
+	Value "Vol'tek Progressive Faction"
+StringInfo
+	ID "IDS_PLAYER_AI_NAME_EXILE_1"
+	Value "Vol'tek Statebuilding Faction"
+StringInfo
+	ID "IDS_PLAYER_AI_NAME_EXILE_2"
+	Value "Vol'tek Nationalist Faction"
+StringInfo
+	ID "IDS_PLAYER_AI_NAME_EXILE_3"
+	Value "Vol'tek Popular Faction"
+StringInfo
+	ID "IDS_PLAYER_AI_NAME_EXILE_4"
+	Value "Vol'tek New Power Faction"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_ADDITIONAL_BANKS_NAME"
+	Value "Additional Banks"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_ADDITIONAL_BANKS_DESCRIPTION"
+	Value "Grants many ships one or more additional weapon banks."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER_NAME"
+	Value "Anti-Fighter Turrets"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER_DESCRIPTION"
+	Value "Grants many ships an anti-fighter turret."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_BEAM_NAME"
+	Value "Laser Beam Weapons"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_BEAM_DESCRIPTION"
+	Value "Allows the usage of Laser Beam Weapons on every Capital Ship."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH_NAME"
+	Value "Bombardment strength"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH_DESCRIPTION"
+	Value "Enchances bombardment powers of all ships."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_DEATHRAY_NAME"
+	Value "Death Ray"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_DEATHRAY_DESCRIPTION"
+	Value "Installs deadly Bombardment Lasers on many Capital Ships."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_LASERS_NAME"
+	Value "Lasers"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_LASERS_DESCRIPTION"
+	Value "Installs strong Helium Laser Weapons on all ships."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_LASERSTRENGTH_NAME"
+	Value "Laser Stength"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_LASERSTRENGTH_DESCRIPTION"
+	Value "Enchances laser intensity by using newly developed Optic Phasing Crystals."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILESTRENGTH_NAME"
+	Value "Projectile strength"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILESTRENGTH_DESCRIPTION"
+	Value "Enchances projectile velocity and thereby impact strength."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_TITAN1_NAME"
+	Value "Project T (1) - Planning"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_TITAN1_DESCRIPTION"
+	Value "Begin with the construction of the Project T Titan Prototype."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_TITAN2_NAME"
+	Value "Project T (2) - Construction"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_TITAN2_DESCRIPTION"
+	Value "Continue with the construction of the Project T Titan Prototype."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_TITAN3_NAME"
+	Value "Project T (3) - Forging"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_TITAN3_DESCRIPTION"
+	Value "Continue with the construction of the Project T Titan Prototype."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_TITAN4_NAME"
+	Value "Project T (4) - Wiring"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_TITAN4_DESCRIPTION"
+	Value "Complete the construction of the Project T Titan Prototype."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_LASERCOOLDOWN_NAME"
+	Value "Laser Cooldown"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_LASERCOOLDOWN_DESCRIPTION"
+	Value "Shortens Laser Cooldown by installing Liquid Nitrogen cooling devices in the weapon banks."
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILECOOLDOWN_NAME"
+	Value "Projectile Cooldown"
+StringInfo
+	ID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILECOOLDOWN_DESCRIPTION"
+	Value "Shortens Projectile Cooldown by using faster projectile loading methods."
+StringInfo
+	ID "IDS_TITAN_EXILE1_NAME"
+	Value "Project T Class Titan"
+StringInfo
+	ID "IDS_TITAN_EXILE1_DESCRIPTION"
+	Value "Secret Titan prototype. Can be unstable..."
+

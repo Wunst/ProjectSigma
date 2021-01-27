@@ -11,65 +11,36 @@ randomStarBaseNamePrefix "IDS_STARBASENAME_EXILE"
 entities
 	planetModuleInfo
 		Page:0
-			count 7
+			count 3
 			entityDefName "PLANETMODULE_TECHMETALEXTRACTOR"
 			entityDefName "PLANETMODULE_TECHCRYSTALEXTRACTOR"
 			entityDefName "PLANETMODULE_EXILE_VESSEL_LAB"
-			entityDefName "PLANETMODULE_EXILE_MODULAR_TECHNOLOGY_LAB"
-			entityDefName "PLANETMODULE_EXILE_COMMUNICATION_LAB"
-			entityDefName "PLANETMODULE_EXILE_SMALL_FACTORY"
-			entityDefName "PLANETMODULE_EXILE_LARGE_FACTORY"
 		Page:1
-			count 9
+			count 2
 			entityDefName "PLANETMODULE_TECHORBITALREPAIRPLATFORM"
-			entityDefName "PLANETMODULE_EXILE_ACTUAL_GOOD_DEFENSE_TURRET"
-			entityDefName "PLANETMODULE_EXILE_LIGHTNING_WEB"
-			entityDefName "PLANETMODULE_EXILE_ETERNAL_CHARGER"
-			entityDefName "PLANETMODULE_EXILE_GATEWAY"
-			entityDefName "PLANETMODULE_EXILE_SHIELD"
-			entityDefName "PLANETMODULE_EXILE_ARMAGEDDON_OLD"
 			entityDefName "PLANETMODULE_EXILE_TITAN_FACTORY"
-			entityDefName "PLANETMODULE_EXILE_HANGAR"
 	titanInfo
 		Page:0
-			count 2
+			count 1
 			entityDefName "TITAN_EXILE_PROJECTTAURUS"
-			entityDefName "TITAN_EXILE_TALANTUS"
 	capitalShipInfo
 		Page:0
-			count 6
-			entityDefName "CAPITALSHIP_EXILE_TANK"
+			count 1
 			entityDefName "CAPITALSHIP_EXILE_BALANCED"
-			entityDefName "CAPITALSHIP_EXILE_DEVASTATOR"
-			entityDefName "CAPITALSHIP_EXILE_ATTRACTOR"
-			entityDefName "CAPITALSHIP_EXILE_CARRIER"
-			entityDefName "CAPITALSHIP_EXILE_FACTORY"
 	frigateInfo
 		Page:0
-			count 5
-			entityDefName "FRIGATE_EXILE_DEATH"
-			entityDefName "FRIGATE_EXILE_FLAK"
-			entityDefName "FRIGATE_EXILE_CANNIBAL"
-			entityDefName "FRIGATE_EXILE_BALANCED"
-			entityDefName "FRIGATE_EXILE_DISCOVERY"
-			entityDefName "FRIGATE_EXILE_COLONISER"
+			count 0
 		Page:1
-			count 5
-			entityDefName "CRUISER_EXILE_LIGHT_CARRIER"
-			entityDefName "CRUISER_EXILE_ARMED_SEARCHER"
-			entityDefName "CRUISER_EXILE_SHIELDS"
-			entityDefName "CRUISER_EXILE_CANNON_FODDER"
-			entityDefName "CRUISER_EXILE_TANK"
+			count 0
 		NotOnPage
 			count 3
-			entityDefName "FRIGATE_EXILE_CONSTRUCTOR"
+			entityDefName "FrigateTechModuleConstructor"
 			entityDefName "FrigateTechTradeShip"
 			entityDefName "FrigateTechRefineryShip"
 	researchInfo
 		----
 	starBaseInfo
-		count 1
-		entityDefName "STARBASE_EXILE"
+		count 0
 debrisData
 	numRandomMeshNamesLarge 10
 	randomMeshName "DebrisPsiGenericLarge0"
@@ -606,19 +577,19 @@ researchScreenData
 	Vessels
 		blockCount 3
 		block
-			area ----
+			area [ 50 , 69 , 690 , 235 ]
 			backdrop "ResearchScreenBlockBackdropCombat0Psi"
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_FRIGATES"
 			picture ""
 		block
-			area ----
+			area [ 50 , 314 , 690 , 240 ]
 			backdrop "ResearchScreenBlockBackdropCombat1Psi"
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_CAPITAL"
 			picture ""
 		block
-			area ----
+			area [ 50 , 565 , 690 , 100 ]
 			backdrop "ResearchScreenBlockBackdropDefense0Psi"
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_TAC_BUILDS"
@@ -626,19 +597,19 @@ researchScreenData
 	Modular
 		blockCount 3
 		block
-			area ----
+			area [ 50 , 69 , 690 , 235 ]
 			backdrop "ResearchScreenBlockBackdropCombat2Psi"
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_OFFENSE"
 			picture ""
 		block
-			area ----
+			area [ 50 , 314 , 690 , 240 ]
 			backdrop "ResearchScreenBlockBackdropNonCombat0Psi"
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_DEFENSE"
 			picture ""
 		block
-			area ----
+			area [ 50 , 565 , 690 , 100 ]
 			backdrop "ResearchScreenBlockBackdropNonCombat1Psi"
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_SUPPORT"
@@ -646,13 +617,13 @@ researchScreenData
 	Communication
 		blockCount 2
 		block
-			area ----
+			area [ 50 , 314 , 690 , 240 ]
 			backdrop "ResearchScreenBlockBackdropNonCombat2Psi"
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_DIPLOMACY"
 			picture ""
 		block
-			area ----
+			area [ 50 , 565 , 690 , 100 ]
 			backdrop "ResearchScreenBlockBackdropNonCombat0Psi"
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_INTELLIGENCE"
@@ -726,17 +697,12 @@ gameOverWindowData
 	hasWonOccupationPhraseStringId "IDSGameOverDialogHasWonPhrasePsiOccupation"
 	hasLostOccupationPhraseStringId "IDSGameOverDialogHasLostPhrasePsiOccupation"
 aiNameData
-	nameCount 10
+	nameCount 5
 	name "IDS_PLAYER_AI_NAME_EXILE_0"
 	name "IDS_PLAYER_AI_NAME_EXILE_1"
 	name "IDS_PLAYER_AI_NAME_EXILE_2"
 	name "IDS_PLAYER_AI_NAME_EXILE_3"
 	name "IDS_PLAYER_AI_NAME_EXILE_4"
-	name "IDS_PLAYER_AI_NAME_EXILE_5"
-	name "IDS_PLAYER_AI_NAME_EXILE_6"
-	name "IDS_PLAYER_AI_NAME_EXILE_7"
-	name "IDS_PLAYER_AI_NAME_EXILE_8"
-	name "IDS_PLAYER_AI_NAME_EXILE_9"
 raceNameParsePrefix "TECH"
 raceNameParsePrefixFallback "PSI"
 numResearchFields 3
@@ -745,6 +711,5 @@ field "IDS_EXILE_RESEARCHFIELD_MODULAR"
 field "IDS_EXILE_RESEARCHFIELD_COMMUNICATION"
 playerThemeGroupName "PLAYER_EXILE"
 playerPictureGroupName "PLAYER_EXILE"
-raceRelationsModCount ----
-raceRelationsModifier ----
+raceRelationsModCount 0
 defaultFactionNameID "IDS_PLAYERFACTIONNAME_LOYALIST"
