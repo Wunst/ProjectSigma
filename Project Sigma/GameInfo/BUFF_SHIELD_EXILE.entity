@@ -1,0 +1,46 @@
+TXT2
+SinsArchiveVersion 194
+entityType "Buff"
+onReapplyDuplicateType "PrioritizeNewBuffs"
+buffStackingLimitType "PerPlayer"
+stackingLimit 1
+allowFirstSpawnerToStack FALSE
+buffExclusivityForAIType "ExclusivePerPlayer"
+isInterruptable TRUE
+isChanneling FALSE
+numInstantActions 1
+instantAction
+	buffInstantActionType "ApplyBuffToSelf"
+	instantActionTriggerType "OnCondition"
+	instantActionConditionType "IfOwnerDoesNotHaveBuff"
+	conditionBuffType "BuffShield"
+	conditionBuffShortName "BUFF_SHIELD_EXILE"
+	buffType "BuffShield"
+	effectInfo
+		effectAttachInfo 
+		attachType "Ability"
+			abilityIndex 0
+	smallEffectName "TitanAbility_Overcharge_Buff"
+		mediumEffectName "TitanAbility_Overcharge_Buff"
+		largeEffectName "TitanAbility_Overcharge_Buff"
+		soundID ""	
+numPeriodicActions 0
+numOverTimeActions 0
+numOverTimeActions 0
+numEntityModifiers 1
+	entityModifier
+	buffEntityModifierType "ShieldPointRestoreRate"
+		value
+		Level:0: 15.000000
+		Level:1: 15.000000
+		Level:2: 15.000000
+		Level:3: 15.000000
+numEntityBoolModifiers 0
+numFinishConditions 1
+	finishCondition
+	finishConditionType "TimeElapsed"
+		time
+			Level:0 15.000000
+			Level:1 15.000000
+			Level:2 15.000000
+			Level:3 15.000000
