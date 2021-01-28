@@ -5,7 +5,7 @@ raceNameStringID "IDS_PLAYERRACENAME_EXILE"
 canColonize TRUE
 playerRaceType "Other"
 isSelectable TRUE
-selectablePriority 3
+selectablePriority 6
 randomCapitalShipNamePrefix "IDS_CAPITALSHIPNAME_EXILE"
 randomStarBaseNamePrefix "IDS_STARBASENAME_EXILE"
 entities
@@ -709,7 +709,7 @@ numResearchFields 3
 field "IDS_EXILE_RESEARCHFIELD_VESSELS"
 field "IDS_EXILE_RESEARCHFIELD_MODULAR"
 field "IDS_EXILE_RESEARCHFIELD_COMMUNICATION"
-playerThemeGroupName "PLAYER_EXILE"
+playerThemeGroupName "PLAYER_PSI"
 playerPictureGroupName "PLAYER_EXILE"
 raceRelationsModCount 0
 defaultFactionNameID "IDS_PLAYERFACTIONNAME_LOYALIST"

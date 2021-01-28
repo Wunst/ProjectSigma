@@ -23655,4 +23655,19 @@ StringInfo
 StringInfo
 	ID "IDS_TITAN_EXILE1_DESCRIPTION"
 	Value "Secret Titan prototype. Can be unstable..."
+StringInfo
+	ID "IDS_RACESELECTDIALOG_EXILE_DESCRIPTION"
+	Value "Placeholder description for the Vol'tek exilants."
+StringInfo
+	ID "IDS_PLANETMODULE_EXILE_REPAIR_NAME"
+	Value "Repair Platform"
+StringInfo
+	ID "IDS_PLANETMODULE_EXILE_REPAIR_DESCRIPTION"
+	Value "Fixes hull and shields of nearby ships."
+StringInfo
+	ID "IDS_PLANETMODULE_EXILE_TITAN_FACTORY_NAME"
+	Value "Titan Factory"
+StringInfo
+	ID "IDS_PLANETMODULE_EXILE_REPAIR_NAME"
+	Value "Used to build titans."
 
