@@ -13,11 +13,11 @@ usesFighterAttack FALSE
 autoJoinFleetDefault TRUE
 canBomb TRUE
 hasBombingLevels TRUE
-baseDamage ----
-basePopulationKilled ----
+baseDamage 40.000000
+basePopulationKilled 2.000000
 bombingFreqTime 12.000000
-baseRange ----
-bombTransitTime ----
+baseRange 2750.000000
+bombTransitTime 10.000000
 bombEffectCount 3
 bombEffectAngleVariance 10.000000
 bombEffectsDef
@@ -44,35 +44,38 @@ bombEffectsDef
 	projectileTravelEffectName "Weapon_TechCapitalPlanetBombing_Travel"
 mainViewIcon "MAINVIEWICON_CAPITALSHIP_EXILEBALANCED"
 basePrice
-	credits ----
-	metal ----
-	crystal ----
+	credits 3350.000000
+	metal 900.000000
+	crystal 550.000000
 slotCount 50.000000
 BuildTime 80.000000
 MaxHullPoints
-	StartValue ----
-	ValueIncreasePerLevel ----
+	StartValue 3200.000000
+	ValueIncreasePerLevel 75.000000
 MaxShieldPoints
-	StartValue ----
-	ValueIncreasePerLevel ----
+	StartValue 2200.000000
+	ValueIncreasePerLevel 100.000000
 ShieldPointRestoreRate
-	StartValue ----
-	ValueIncreasePerLevel ----
+	StartValue 1.500000
+	ValueIncreasePerLevel 0.100000
+ShieldPointRestoreRate
+	StartValue 4.000000
+	ValueIncreasePerLevel 0.100000
 ArmorPointsFromExperience
-	StartValue ----
-	ValueIncreasePerLevel ----
+	StartValue 2.000000
+	ValueIncreasePerLevel 0.200000
 maxMitigation
-	StartValue ----
-	ValueIncreasePerLevel ----
+	StartValue 0.650000
+	ValueIncreasePerLevel 0.010000
 MaxAntiMatter
-	StartValue ----
-	ValueIncreasePerLevel ----
+	StartValue 800.000000
+	ValueIncreasePerLevel 820.000000
 AntiMatterRestoreRate
-	StartValue ----
-	ValueIncreasePerLevel ----
+	StartValue 3.500000
+	ValueIncreasePerLevel 0.200000
 CultureProtectRate
-	StartValue ----
-	ValueIncreasePerLevel ----
+	StartValue 0.200000
+	ValueIncreasePerLevel 0.025000
 NameStringID "IDS_CAPITALSHIP_EXILEBALANCED_NAME"
 DescriptionStringID "IDS_CAPITALSHIP_EXILEBALANCED_NAME"
 picture "CAPITALSHIPPICTURE_EXILEBALANCED"
