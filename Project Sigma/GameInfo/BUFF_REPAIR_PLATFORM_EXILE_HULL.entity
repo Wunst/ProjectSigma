@@ -9,6 +9,7 @@ buffExclusivityForAIType "ExclusiveForAllPlayers"
 isInterruptable FALSE
 isChannelling FALSE
 numInstantActions 1
+instantAction
 	buffInstantActionType "RestoreShields"
 	shieldRestoreRate
 		Level:0 100.000000
