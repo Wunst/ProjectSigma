@@ -16,7 +16,7 @@ targetFilter
 	object "Corvette"
 	numSpaces 1
 	space "Normal"
-	numConstraints 1
+	numConstraints 2
 	constraint "HasHullDamage"
 	constraint "NotSelf"
 range
@@ -45,7 +45,6 @@ onlyAutoCastWhenTargetHullDamageExceedsAmount
 	Level:1 0.000000
 	Level:2 0.000000
 	Level:3 0.000000
-	Level:4 0.000000
 isAutoCastAvailable TRUE
 isAutoCastOnByDefault TRUE
 pickRandomPlanetToExploreForAutoCastTarget FALSE
@@ -57,13 +56,11 @@ antiMatterCost
 	Level:1 0.000000
 	Level:2 0.000000
 	Level:3 0.000000
-	Level:4 0.000000
 cooldownTime
 	Level:0 5.000000
 	Level:1 0.000000
 	Level:2 0.000000
 	Level:3 0.000000
-	Level:4 0.000000
 orderAcknowledgementType "ONGENERALORDERISSUED"
 researchPrerequisites
 	NumResearchPrerequisites 0
