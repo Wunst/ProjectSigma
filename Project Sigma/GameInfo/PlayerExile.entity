@@ -38,6 +38,7 @@ entities
 			entityDefName "FrigateTechTradeShip"
 			entityDefName "FrigateTechRefineryShip"
 	researchInfo
+		count 14
 		entityDefName "RESEARCHSUBJECT_EXILE_MODULAR_ADDITIONAL_BANKS"
 		entityDefName "RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER"
 		entityDefName "RESEARCHSUBJECT_EXILE_MODULAR_BEAM"
