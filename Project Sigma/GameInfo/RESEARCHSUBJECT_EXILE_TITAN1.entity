@@ -9,7 +9,7 @@ DescriptionStringID "IDS_RESEARCHSUBJECT_EXILE_TITAN1_DESCRIPTION"
 researchWindowLocation
 	block 1
 	pos [ 3 , 4 ]
-ResearchField "Vessels"
+ResearchField "Combat"
 Prerequisites
 	NumResearchPrerequisites 0
 	RequiredFactionNameID ""

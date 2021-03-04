@@ -9,7 +9,7 @@ DescriptionStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILESTRENGTH_DESCRI
 researchWindowLocation
 	block 0
 	pos [  ,  ]
-ResearchField "Modular"
+ResearchField "Defense"
 Prerequisites
 	NumResearchPrerequisites 0
 	RequiredFactionNameID ""

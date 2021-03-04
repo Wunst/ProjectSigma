@@ -9,7 +9,7 @@ DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_LASERS_DESCRIPTION"
 researchWindowLocation
 	block 0
 	pos [ , ]
-ResearchField "Modular"
+ResearchField "Defense"
 Prerequisites
 	NumResearchPrerequisites 0
 	RequiredFactionNameID ""

@@ -9,7 +9,7 @@ DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_DEATHRAY_DESCRIPTION"
 researchWindowLocation
 	block 0
 	pos [ , ]
-ResearchField "Modular"
+ResearchField "Defense"
 Prerequisites
 	NumResearchPrerequisites 1
 	ResearchPrerequisite
