@@ -107,7 +107,7 @@ Weapon
 	damageEnums
 		AttackType "CAPITALSHIP"
 		DamageAffectType "AFFECTS_SHIELDS_AND_HULL"
-		DamageApplyType "BACKLOAD"
+		DamageApplyType "BACKLOADED"
 		DamageType "PHYSICAL"
 		WeaponClassType "RAILGUN"
 	DamagePerBank:FRONT 80.000000
