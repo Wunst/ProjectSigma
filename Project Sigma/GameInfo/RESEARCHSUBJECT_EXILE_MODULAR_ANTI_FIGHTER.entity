@@ -23,6 +23,10 @@ BaseCost
 	credits 500.000000
 	metal 50.000000
 	crystal 25.000000
+PerLevelIncrease
+	credits 220.000000
+	metal 20.000000
+	crystal 10.000000
 Tier 3
 onlyWorksIfTierLabsExist FALSE
 MaxNumResearchLevels 2
