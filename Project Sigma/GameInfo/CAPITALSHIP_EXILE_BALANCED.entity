@@ -106,7 +106,7 @@ Weapon
 	WeaponType "Projectile"
 	damageEnums
 		AttackType "CAPITALSHIP"
-		DamageAffectType "AFFECTS_SHIELD_AND_HULL"
+		DamageAffectType "AFFECTS_SHIELDS_AND_HULL"
 		DamageApplyType "BACKLOAD"
 		DamageType "PHYSICAL"
 		WeaponClassType "RAILGUN"
@@ -144,7 +144,7 @@ Weapon
 	WeaponType "Beam"
 	damageEnums
 		AttackType "CAPITALSHIP"
-		DamageAffectType "AFFECTS_SHIELD_AND_HULL"
+		DamageAffectType "AFFECTS_SHIELDS_AND_HULL"
 		DamageApplyType "OVERTIME"
 		DamageType "ENERGY"
 		WeaponClassType "CHAOSBOLT"
