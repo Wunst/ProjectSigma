@@ -588,7 +588,7 @@ hudSkinData
 	UserActionIconIncreaseGameSpeed "ActionIconIncreaseGameSpeed"
 	UserActionIconDecreaseGameSpeed "ActionIconDecreaseGameSpeed"
 researchScreenData
-	Vessels
+	Combat
 		blockCount 3
 		block
 			area [ 50 , 69 , 690 , 235 ]
@@ -608,7 +608,7 @@ researchScreenData
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_TAC_BUILDS"
 			picture ""
-	Modular
+	Defense
 		blockCount 3
 		block
 			area [ 50 , 69 , 690 , 235 ]
@@ -628,7 +628,7 @@ researchScreenData
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_SUPPORT"
 			picture ""
-	Communication
+	NonCombat
 		blockCount 2
 		block
 			area [ 50 , 314 , 690 , 240 ]
