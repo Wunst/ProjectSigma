@@ -643,6 +643,8 @@ researchScreenData
 			tierIndicatorBackdrop ""
 			title "IDS_RESEARCHSCREENBLOCKTITLE_EXILE_INTELLIGENCE"
 			picture ""
+	Diplomacy
+		blockCount 0
 	Artifact
 		blockCount 1
 		block
