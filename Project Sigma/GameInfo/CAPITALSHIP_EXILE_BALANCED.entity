@@ -91,6 +91,8 @@ Prerequisites
 	NumResearchPrerequisites 0
 	RequiredFactionNameID ""
 	RequiredCompletedResearchSubjects 0
+roleType "Invalid"
+statCountType "CapitalShipBattleship"
 numRandomDebrisLarge 1
 numRandomDebrisSmall 5
 numSpecificDebris 0
