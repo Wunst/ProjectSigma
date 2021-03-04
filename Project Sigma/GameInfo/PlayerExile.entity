@@ -55,6 +55,7 @@ entities
 		entityDefName "RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILECOOLDOWN"
 	starBaseInfo
 		count 0
+	flagship "FrigatePsiFlagship"
 debrisData
 	numRandomMeshNamesLarge 10
 	randomMeshName "DebrisPsiGenericLarge0"
