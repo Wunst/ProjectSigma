@@ -1,5 +1,5 @@
 TXT
-entityNameCount 1862
+entityNameCount 1864
 entityName "AbilityAbilityGuidance.entity"
 entityName "AbilityAdaptiveShield.entity"
 entityName "AbilityAntiMatterDetonate.entity"
@@ -1843,8 +1843,10 @@ entityName "BuffEventResourceBoomExtractors.entity"
 entityName "AbilityRuinPlanet.entity"
 entityName "ABILITY_REPAIR_PLATFORM_EXILE1.entity"
 entityName "ABILITY_REPAIR_PLATFORM_EXILE2.entity"
+entityName "ABILITY_SHIELD_EXILE.entity"
 entityName "BUFF_REPAIR_PLATFORM_EXILE_HULL.entity"
 entityName "BUFF_REPAIR_PLATFORM_EXILE_SHIELD.entity"
+entityName "BUFF_SHIELD_EXILE.entity"
 entityName "CAPITALSHIP_EXILE_BALANCED.entity"
 entityName "PLANETMODULE_EXILE_TITAN_FACTORY.entity"
 entityName "RESEARCHSUBJECT_EXILE_MODULAR_ADDITIONAL_BANKS.entity"
