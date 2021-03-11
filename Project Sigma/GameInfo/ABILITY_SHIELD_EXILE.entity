@@ -1,7 +1,7 @@
 TXT2
 SinsArchiveVersion 194
 entityType "Ability"
-buffInstantActionType "ApplyBuffToSelf"
+buffInstantActionType "ApplyOrRemoveBuffToSelf"
 instantActionTriggerType "OnBuffFinish"
 buffType "BUFF_SHIELD_EXILE"
 effectInfo
@@ -11,6 +11,8 @@ effectInfo
 	mediumEffectName ""
 	largeEffectName ""
 	soundID ""
+toggleStateOnNameStringID "IDS_TOGGLE_ABILITY_SHIELD"
+toggleStateOnDescStringID "IDS_TOGGLE_ABILITY_SHIELD_DESC"
 needsToFaceTarget FALSE
 canCollideWithTarget FALSE
 moveThruTarget FALSE
@@ -24,15 +26,8 @@ aiUseTargetCondition "ShieldDamageExceedsAmount"
 		Level:1 1000.000000
 		Level:2 1000.000000
 		Level:3 1000.000000
-isAutoCastAvailable "ShieldDamageExceedsAmount"
+isAutoCastAvailable FALSE
 isAutoCastOnByDefault FALSE
-sourcePropertyType "AbilityALevel"
-onlyAutoCastWhenTargetShieldDamageExceedsAmount TRUE
-	Level:0 300.000000
-    Level:1 300.000000
-    Level:2 300.000000
-    Level:3 300.000000
-
 pickRandomPlanetToExploreForAutoCastTarget FALSE
 ignoreNonCombatShipsForAutoCastTarget TRUE
 onlyAutoCastWhenDamageTakenExceedsPerc: 0.200000
@@ -53,8 +48,6 @@ researchPrerequisites
     RequiredCompletedResearchSubjects 0
 nameStringID "IDS_ABILITY_SHIELD_NAME"
 descStringID "IDS_ABILITY_SHIELD_DESC"
-toggleStateOnNameStringID "IDS_TOGGLE_ABILITY_SHIELD"
-toggleStateOnDescStringID "IDS_TOGGLE_ABILITY_SHIELD_DESC"
 hudIcon "HUDICON_ABILITY_SHIELD_DESC"
 smallHudIcon "HUDICON_ABILITY_SHIELD_DESC"
 infoCardIcon ""
