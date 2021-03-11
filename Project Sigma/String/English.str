@@ -1,5 +1,5 @@
 ﻿TXT
-NumStrings 7890
+NumStrings 7892
 StringInfo
 	ID "IDSPlayerAINameTech0"
 	Value "Nitheim Rebellen"
@@ -23670,4 +23670,10 @@ StringInfo
 StringInfo
 	ID "IDS_PLANETMODULE_EXILE_REPAIR_NAME"
 	Value "Used to build titans."
+StringInfo
+	ID "IDS_TOGGLE_ABILITY_SHIELD"
+	Value "More power to the shields"
+StringInfo
+	ID "IDS_TOGGLE_ABILITY_SHIELD_DESC"
+	Value "Direct more power to the primary shield matrix"
 
