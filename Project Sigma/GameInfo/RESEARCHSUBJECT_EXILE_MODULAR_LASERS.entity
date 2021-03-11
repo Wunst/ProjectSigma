@@ -8,7 +8,7 @@ NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_LASERS_NAME"
 DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_LASERS_DESCRIPTION"
 researchWindowLocation
 	block 0
-	pos [ , ]
+	pos [ 1 , 4 ]
 ResearchField "Defense"
 Prerequisites
 	NumResearchPrerequisites 0

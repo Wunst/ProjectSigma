@@ -8,7 +8,7 @@ NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER_NAME"
 DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER_DESCRIPTION"
 researchWindowLocation
 	block 0
-	pos [ , ]
+	pos [ 3 , 3 ]
 ResearchField "Defense"
 Prerequisites
 	NumResearchPrerequisites 1

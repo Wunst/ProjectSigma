@@ -8,7 +8,7 @@ NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_BEAM_NAME"
 DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_BEAM_DESCRIPTION"
 researchWindowLocation
 	block 0
-	pos [ , ]
+	pos [ 4 , 4 ]
 ResearchField "Defense"
 Prerequisites
 	NumResearchPrerequisites 1

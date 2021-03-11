@@ -8,7 +8,7 @@ NameStringID "IDS_RESEARCHSUBJECT_EXILE_TITAN3_NAME"
 DescriptionStringID "IDS_RESEARCHSUBJECT_EXILE_TITAN3_DESCRIPTION"
 researchWindowLocation
 	block 1
-	pos [ 3 , 4 ]
+	pos [ 5 , 4 ]
 ResearchField "Combat"
 Prerequisites
 	NumResearchPrerequisites 0
