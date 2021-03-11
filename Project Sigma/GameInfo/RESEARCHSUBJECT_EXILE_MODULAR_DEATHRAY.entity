@@ -24,7 +24,7 @@ BaseCost
 	credits 2000.000000
 	metal 450.000000
 	crystal 300.000000
-PerLevelIncrease
+PerLevelCostIncrease
 	credits 0.000000
 	metal 0.000000
 	crystal 0.000000
