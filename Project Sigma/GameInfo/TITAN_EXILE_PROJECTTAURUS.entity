@@ -10,11 +10,19 @@ defaultAutoAttackRange "GravityWell"
 defaultAutoAttackOn TRUE
 prefersToFocusFire TRUE
 usesFighterAttack FALSE
-autoJoinDefaultFleet TRUE
+autoJoinFleetDefault TRUE
 canBomb TRUE
-hasBombingLevels FALSE
-baseDamage 65
-baseDamagePopulationKilled 5
+hasBombingLevels TRUE
+baseDamage
+	Level:0 65.000000
+	Level:1 65.000000
+	Level:2 70.000000
+	Level:3 70.000000 
+basePopulationKilled
+	Level:0 3.000000
+	Level:1 4.000000
+	Level:2 5.000000
+	Level:3 6.000000
 bombingFreqTime 15.000000
 baseRange 4000.000000
 bombTransitTime 5.000000
@@ -55,7 +63,10 @@ MaxHullPoints
 MaxShieldPoints 
 	StartValue 8000.000000
 	ValueIncreasePerLevel 800.000000
-ShieldPointsRestoreRate
+HullPointRestoreRate
+	StartValue 2.000000
+	ValueIncreasePerLevel 0.200000
+ShieldPointRestoreRate
 	StartValue 3.000000
 	ValueIncreasePerLevel 0.750000
 ArmorPointsFromExperience
@@ -78,13 +89,13 @@ DescriptionStringID "IDS_TITAN_EXILE1_DESCRIPTION"
 picture "TITANPICTURE_EXILE"
 Prerequisites
 	NumResearchPrerequisites 1
-	ResearchPrerequisite 1
+	ResearchPrerequisite
 		Subject "RESEARCHSUBJECT_EXILE_TITAN1"
 		Level 1
 	RequiredFactionNameID ""
-statCountType "TITAN"
+	RequiredCompletedResearchSubjects 0
+statCountType "Titan"
 UpgradeTypeCount 7	
-RequiredCompletedResearchSubjects 0
 UpgradeType "TITANUPGRADE_EXILE_ABILITYA"
 UpgradeType "TITANUPGRADE_EXILE_ABILITYB"
 UpgradeType "TITANUPGRADE_EXILE_ABILITYC"
@@ -95,8 +106,8 @@ UpgradeType "TITANUPGRADE_EXILE_ABILITIES"
 numRandomDebrisLarge 85
 numRandomDebrisSmall 15
 numSpecificDebris 1
-specificDebrisMeshName "DebrisAdventLarge"
-armorType "TITAN"
+	specificDebrisMeshName "DebrisAdventLarge"
+armorType "Titan"
 hudIcon "HUDICON_RESEARCHSUBJECT_TITAN_PSIREBEL"
 smallHudIcon "HUDICONSMALL_TITAN_PSIREBEL"
 infoCardIcon "INFOCARDICON_TITAN_PSIREBEL"
@@ -121,7 +132,7 @@ Weapon
 	PointStaggerDelay 0.300000
 	TravelSpeed 0.000000
 	Duration 0.000000
-	fireConstaintType "CanAlwaysFire"
+	fireConstraintType "CanAlwaysFire"
 	WeaponEffects
 		weaponType "Projectile"
 		burstCount 5
