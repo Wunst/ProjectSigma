@@ -12,7 +12,7 @@ researchWindowLocation
 ResearchField "Defense"
 Prerequisites
 	NumResearchPrerequisites 1
-	ResearchPrerequisites
+	ResearchPrerequisite
 		Subject "RESEARCHSUBJECT_EXILE_MODULAR_LASERS"
 		Level 1
 	RequiredFactionNameID ""
