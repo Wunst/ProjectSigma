@@ -14,6 +14,7 @@ Prerequisites
 	NumResearchPrerequisites 1
 	ResearchPrerequisite
 		Subject "RESEARCHSUBJECT_EXILE_MODULAR_ADDITIONAL_BANKS"
+		Level 1
 	RequiredFactionNameID ""
 	RequiredCompletedResearchSubjects 0
 MinimumArtifactLevel -1
@@ -23,7 +24,7 @@ BaseCost
 	credits 500.000000
 	metal 50.000000
 	crystal 25.000000
-PerLevelIncrease
+PerLevelCostIncrease
 	credits 220.000000
 	metal 20.000000
 	crystal 10.000000
