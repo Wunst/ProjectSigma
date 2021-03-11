@@ -8,7 +8,7 @@ needsToFaceTarget false
 canCollideWithTarget false
 moveThruTarget false
 isUltimateAbility false
-maxNumLevels 1
+maxNumLevels 4
 levelSourceType "FixedLevel0"
 sourcePropertyType "AbilityALevel"
 aiUseTime "OnlyWhenTakingDamage"
