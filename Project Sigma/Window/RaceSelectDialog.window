@@ -235,42 +235,42 @@ numFactionWindows 3
 			overlay ""
 		sharedTechsStartPosition [364,200]
 		spaceBetweenSharedTechs 6
-			sharedTechOne ""
-			sharedTechTwo ""
-			sharedTechThree ""
-			sharedTechFour ""
+			sharedTechOne "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			sharedTechTwo "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			sharedTechThree "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			sharedTechFour "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
 		sharedCapitalShipsStartPosition [441,270]
 		spaceBetweenSharedCapitalShips 2
-			sharedCapitalShipOne ""
-			sharedCapitalShipTwo ""
-			sharedCapitalShipThree ""
-			sharedCapitalShipFour ""
-			sharedCapitalShipFive ""
-			sharedCapitalShipSix ""
+			sharedCapitalShipOne "CAPITALSHIP_EXILE_BALANCED"
+			sharedCapitalShipTwo "CAPITALSHIP_EXILE_BALANCED"
+			sharedCapitalShipThree "CAPITALSHIP_EXILE_BALANCED"
+			sharedCapitalShipFour "CAPITALSHIP_EXILE_BALANCED"
+			sharedCapitalShipFive "CAPITALSHIP_EXILE_BALANCED"
+			sharedCapitalShipSix "CAPITALSHIP_EXILE_BALANCED"
 		spaceBetweenFactionTechs 8
 		leftFactionTechsStartPosition [373, 578]
-			leftFactionTechOne ""
-			leftFactionTechTwo ""
-			leftFactionTechThree ""
-			leftFactionTechFour ""
-			leftFactionTechFive ""
-			leftFactionTechSix ""
+			leftFactionTechOne "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			leftFactionTechTwo "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			leftFactionTechThree "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			leftFactionTechFour "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			leftFactionTechFive "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			leftFactionTechSix "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
 		rightFactionTechsStartPosition [553, 578]
-			rightFactionTechOne ""
-			rightFactionTechTwo ""
-			rightFactionTechThree ""
-			rightFactionTechFour ""
-			rightFactionTechFive ""
-			rightFactionTechSix ""
+			rightFactionTechOne "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			rightFactionTechTwo "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			rightFactionTechThree "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			rightFactionTechFour "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			rightFactionTechFive "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
+			rightFactionTechSix "RESEARCHSUBJECT_EXILE_MODULAR_BOMBARDSTRENGTH"
 		selectLeftButton
 			area [68, 585, 230 , 105]
-			underlayBrush "RaceSelectExile"
+			underlayBrush "RaceSelectTechRebel"
 			buttonTextFont "ButtonLabel"
 			buttonTextID "IDS_RACESELECTDIALOG_SELECTEXILE"
 			buttonTextArea [18,-20,50,100]
 		selectRightButton
 			area [730, 585, 230 , 105]
-			underlayBrush "RaceSelectExile"
+			underlayBrush "RaceSelectTechRebel"
 			buttonTextFont "ButtonLabel"
 			buttonTextID "IDS_RACESELECTDIALOG_SELECTEXILE"
 			buttonTextArea [162,-20,50,100]
