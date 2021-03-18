@@ -236,12 +236,12 @@ Weapon
 		hitHullEffectSounds
 			soundCount 1
 			sound ""
+		hitShieldsEffectSounds
+			soundCount 1
+			sound ""
 		muzzleEffectName "Weapon_PhaseCapitalFlashBeamCapShip_Muzzle"
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
-			soundCount 1
-			sound ""
-		hitShieldsEffectSounds
 			soundCount 1
 			sound ""
 		beamEffectSounds
