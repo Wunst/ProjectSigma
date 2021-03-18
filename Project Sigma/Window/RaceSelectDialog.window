@@ -226,9 +226,9 @@ numFactionWindows 3
 		portraitBackdropBrush "PlayerScreenHappinessBackdropForHumanPlayer"
 		frameOffset [0,-26]
 		backdropOffset [0,168]
-		leftPlayerPortraitBrush "RaceSelectDialogTechLoyalistPortrait"
+		leftPlayerPortraitBrush "LARGE_PORTRAIT_JUTZ"
 		leftPlayerPortraitArea [174,52,195,219]
-		rightPlayerPortraitBrush "RaceSelectDialogTechLoyalistPortrait"
+		rightPlayerPortraitBrush "LARGE_PORTRAIT_JUTZ"
 		rightPlayerPortraitArea [660,52,195,219]
 		techButtonDef
 			backdrop "ResearchWindowButtonBackdrop"

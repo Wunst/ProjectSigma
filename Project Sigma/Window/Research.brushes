@@ -1,6 +1,6 @@
 TXT
 onlyLoadOnDemand FALSE
-brushCount 1
+brushCount 2
 brush
 	name "HUDICON_RESEARCHSUBJECT_WIP"
 	content "States"
@@ -19,4 +19,9 @@ brush
 	Normal
 		fileName "WIP_RESEARCH"
 		pixelBox [ 0, 0, 47, 31 ]
+brush
+    name "LARGE_PORTRAIT_JUTZ"
+    content "Simple"
+    fileName "Jutz"
+    pixelBox [ 0, 0, 195, 219 ]
 
