@@ -239,11 +239,6 @@ Weapon
 		hitShieldsEffectSounds
 			soundCount 1
 			sound ""
-		muzzleEffectName "Weapon_PhaseCapitalFlashBeamCapShip_Muzzle"
-		muzzleSoundMinRespawnTime 0.100000
-		muzzleSounds
-			soundCount 1
-			sound ""
 		beamEffectSounds
 			soundCount 1
 			sound "WEAPON_PHASEPLANETBOMB_LOOP"
@@ -252,7 +247,7 @@ Weapon
 		beamWidth 30.000000
 		beamGlowColor ff474f9f
 		beamCoreColor ff3f7f5f
-		beamTilingRate 3.000000
+		beamTilingRate 3.000000	
 Weapon
 	WeaponType "Projectile"
 	damageEnums
@@ -295,7 +290,7 @@ Weapon
 		sound "WATER_HIT_SHIELD2"
 		projectileTravelEffectName "Weapon_TechRebel_TitanRailgun_Travel"
 m_weaponIndexForRange 0
-firingAlignmentType "DEFAULT"
+firingAlignmentType "Default"
 TargetCountPerBank:FRONT 3
 TargetCountPerBank:BACK 4
 TargetCountPerBank:LEFT 4
@@ -308,7 +303,7 @@ maxAccelerationLinear 55.000000
 maxAccelerationStrafe 0.100000
 maxDecelerationLinear 250.000000
 maxAccelerationAngular 1.100000
-maxDecelerationLinear 10.000000
+maxDecelerationAngular 10.000000
 maxSpeedLinear 250.000000
 maxRollRate 3.000000
 maxRollAngle 3.000000
@@ -324,13 +319,14 @@ effects
 	travelEffectSoundID "HYPERSPACE_TRAVEL"
 	exitEffectName "Hyperspace_Advent_Titan_Exit"
 	exitEffectSoundID "HYPERSPACE_EXIT"
-squadTypeEntityDef:0 "SQUADEXILECOMBAT"
+squadTypeEntityDef:0 ""
 squadAntiMatterCost:0 0.000000
-squadTypeEntityDef:1 "SQUADEXILEBOMBER"
-squadAntiMatterCost:0 0.000000
-squadTypeEntityDef:2
-squadAntiMatterCost:0 0.000000
-squadTypeEntityDef:3
+squadTypeEntityDef:1 ""
+squadAntiMatterCost:1 0.000000
+squadTypeEntityDef:2 ""
+squadAntiMatterCost:2 0.000000
+squadTypeEntityDef:3 ""
+squadAntiMatterCost:3 0.000000
 NumSoundsFor:ONATTACKORDERISSUED 4
 SoundID "TITAN_PSIREBEL_ONATTACKORDERISSUED_0"
 SoundID "TITAN_PSIREBEL_ONATTACKORDERISSUED_1"
@@ -348,13 +344,13 @@ SoundID "TITAN_PSIREBEL_ONSELECTED_1"
 SoundID "TITAN_PSIREBEL_ONSELECTED_2"
 NumSoundsFor:ONSTARTPHASEJUMP 1
 SoundID "TITAN_PSIREBEL_ONSTARTPHASEJUMP_0"
-MeshNameInfoCount
+MeshNameInfoCount 1
 MeshNameInfo
 	meshName "Titan_PsiRebel"
 	criteriaType "None"
 meshNameIncreasedEffectName ""
 meshNameDecreasedEffectName ""
-ExhaustParticleSystemName
+ExhaustParticleSystemName ""
 ExplosionName "Exhaust_PsiRebelTitan"
 CommandPoints
 	StartValue 3.250000
