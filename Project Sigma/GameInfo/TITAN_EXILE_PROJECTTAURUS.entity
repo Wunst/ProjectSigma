@@ -297,7 +297,7 @@ TargetCountPerBank:LEFT 4
 TargetCountPerBank:RIGHT 3
 canOnlyTargetStructures FALSE
 mass 150000.000000
-ShieldMeshName "TITAN_EXILE_SHIELD"
+ShieldMeshName "Titan_PsiRebel_Shield"
 renderShield TRUE
 maxAccelerationLinear 55.000000
 maxAccelerationStrafe 0.100000
