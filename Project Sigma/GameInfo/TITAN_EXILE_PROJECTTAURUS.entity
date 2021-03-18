@@ -145,12 +145,21 @@ Weapon
 			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE"
 			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT1"
 			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT2"
+		hitEffectName "Weapon_TechRebel_TitanRailgun_Hit"
+		hitHullEffectSounds
+			soundCount 1
+			sound "HEAVY_HEAVY_WEAPON _HIT_HULL"
+		hitShieldsEffectSounds
+		soundCount 2
+		sound "WATER_HIT_SHIELD1"
+		sound "WATER_HIT_SHIELD2"
+		projectileTravelEffectName "Weapon_TechRebel_TitanRailgun_Travel"
 Weapon
 	WeaponType "Projectile"
 	damageEnums
 		AttackType "TITAN"
 		DamageAffectType "AFFECTS_SHIELDS_AND_HULL"
-		DamageApplyType "BACKLOAD"
+		DamageApplyType "BACKLOADED"
 		DamageType "PHYSICAL"
 		WeaponClassType "MISSILE"
 	DamagePerBank:FRONT 70.000000
@@ -164,7 +173,7 @@ Weapon
 	PointStaggerDelay 0.300000
 	TravelSpeed 0.000000
 	Duration 0.000000
-	fireConstaintType "CanAlwaysFire"
+	fireConstraintType "CanAlwaysFire"
 	WeaponEffects
 		weaponType "Projectile"
 		burstCount 5
@@ -177,6 +186,15 @@ Weapon
 			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE"
 			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT1"
 			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT2"
+		hitEffectName "Weapon_TechRebel_TitanRailgun_Hit"
+		hitHullEffectSounds
+			soundCount 1
+			sound "HEAVY_HEAVY_WEAPON _HIT_HULL"
+		hitShieldsEffectSounds
+		soundCount 2
+		sound "WATER_HIT_SHIELD1"
+		sound "WATER_HIT_SHIELD2"
+		projectileTravelEffectName "Weapon_TechRebel_TitanRailgun_Travel"
 Weapon
 	WeaponType "Beam"
 	damageEnums
@@ -196,7 +214,7 @@ Weapon
 	PointStaggerDelay 0.300000
 	TravelSpeed 0.000000
 	Duration 0.000000
-	fireConstaintType "Research"
+	fireConstraintType "Research"
 		researchPrerequisites
 			NumResearchPrerequisites 1
 				ResearchPrerequisite
@@ -212,14 +230,15 @@ Weapon
 	muzzleEffectName "WEAPON_EXILE_IONTITAN_MUZZLE"
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
-			soundCount 3
+			soundCount 1
+				sound ""
+		hitEffectName "Weapon_PhaseCapitalFlashBeamCapShip_Hit"
+		hitHullEffectSounds
+			soundCount 1
+			sound ""
 		muzzleEffectName "Weapon_PhaseCapitalFlashBeamCapShip_Muzzle"
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
-			soundCount 1
-			sound ""
-		hitEffectName "Weapon_PhaseCapitalFlashBeamCapShip_Hit"
-		hitHullEffectSounds
 			soundCount 1
 			sound ""
 		hitShieldsEffectSounds
@@ -253,7 +272,7 @@ Weapon
 	PointStaggerDelay 0.300000
 	TravelSpeed 0.000000
 	Duration 0.000000
-	fireConstaintType "CanAlwaysFire"
+	fireConstraintType "CanAlwaysFire"
 	WeaponEffects
 		weaponType "Projectile"
 		burstCount 5
@@ -266,6 +285,15 @@ Weapon
 			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE"
 			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT1"
 			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT2"
+		hitEffectName "Weapon_TechRebel_TitanRailgun_Hit"
+		hitHullEffectSounds
+			soundCount 1
+			sound "HEAVY_HEAVY_WEAPON _HIT_HULL"
+		hitShieldsEffectSounds
+		soundCount 2
+		sound "WATER_HIT_SHIELD1"
+		sound "WATER_HIT_SHIELD2"
+		projectileTravelEffectName "Weapon_TechRebel_TitanRailgun_Travel"
 m_weaponIndexForRange 0
 firingAlignmentType "DEFAULT"
 TargetCountPerBank:FRONT 3
