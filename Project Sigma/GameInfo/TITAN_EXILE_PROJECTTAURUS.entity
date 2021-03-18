@@ -350,8 +350,8 @@ MeshNameInfo
 	criteriaType "None"
 meshNameIncreasedEffectName ""
 meshNameDecreasedEffectName ""
-ExhaustParticleSystemName ""
-ExplosionName "Exhaust_PsiRebelTitan"
+ExhaustParticleSystemName "Exhaust_PsiRebelTitan"
+ExplosionName "CapitalShip0"
 CommandPoints
 	StartValue 3.250000
 	ValueIncreasePerLevel 0.500000
