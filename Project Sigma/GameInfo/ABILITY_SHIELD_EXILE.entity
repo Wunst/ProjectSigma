@@ -2,7 +2,7 @@ TXT2
 SinsArchiveVersion 194
 entityType "Ability"
 buffInstantActionType "ApplyOrRemoveBuffToSelf"
-instantActionTriggerType "OnBuffFinish"
+instantActionTriggerType "AlwaysPerform"
 buffType "BUFF_SHIELD_EXILE"
 effectInfo
 	effectAttachInfo
@@ -19,18 +19,13 @@ moveThruTarget FALSE
 isUltimateAbility FALSE
 maxNumLevels 4
 levelSourceType "FixedLevel0"
-aiUseTime "OnlyWhenTakingDamage"
-aiUseTargetCondition "ShieldDamageExceedsAmount"
-	onlyAutoCastWhenTargetShieldDamageExceedsAmount
-		Level:0 1000.000000
-		Level:1 1000.000000
-		Level:2 1000.000000
-		Level:3 1000.000000
+aiUseTime "Invalid"
+aiUseTargetCondition "Invalid"
 isAutoCastAvailable FALSE
 isAutoCastOnByDefault FALSE
 pickRandomPlanetToExploreForAutoCastTarget FALSE
 ignoreNonCombatShipsForAutoCastTarget TRUE
-onlyAutoCastWhenDamageTakenExceedsPerc: 0.200000
+onlyAutoCastWhenDamageTakenExceedsPerc 0.200000
 useCostType "AntiMatter"
 	antiMatterCost
         Level:0 100.000000
@@ -42,6 +37,7 @@ useCostType "AntiMatter"
         Level:1 35.000000
         Level:2 35.000000
         Level:3 35.000000
+	orderAcknowledgementType "ONGENERALORDERISSUED"
 researchPrerequisites
     NumResearchPrerequisites 0
     RequiredFactionNameID ""

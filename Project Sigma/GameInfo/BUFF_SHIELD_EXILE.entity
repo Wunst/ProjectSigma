@@ -7,7 +7,7 @@ stackingLimit 1
 allowFirstSpawnerToStack FALSE
 buffExclusivityForAIType "ExclusivePerPlayer"
 isInterruptable TRUE
-isChanneling FALSE
+isChannelling FALSE
 numInstantActions 1
 instantAction
 	buffInstantActionType "ApplyBuffToSelf"
@@ -26,15 +26,14 @@ instantAction
 		soundID ""	
 numPeriodicActions 0
 numOverTimeActions 0
-numOverTimeActions 0
 numEntityModifiers 1
 	entityModifier
 	buffEntityModifierType "ShieldPointRestoreRate"
 		value
-		Level:0: 15.000000
-		Level:1: 15.000000
-		Level:2: 15.000000
-		Level:3: 15.000000
+		Level:0 15.000000
+		Level:1 15.000000
+		Level:2 15.000000
+		Level:3 15.000000
 numEntityBoolModifiers 0
 numFinishConditions 1
 	finishCondition

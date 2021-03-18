@@ -23676,4 +23676,3 @@ StringInfo
 StringInfo
 	ID "IDS_TOGGLE_ABILITY_SHIELD_DESC"
 	Value "Direct more power to the primary shield matrix"
-
