@@ -2,7 +2,7 @@ TXT
 pictureCount 8
 LargeScreenPicture
 	textureName "EXILE_PLAYER_PICTURE_LARGE.tga"
-	startTopLeft [0,222]
+	startTopLeft [ 0 , 0 ]
 	width 195
 	height 219
 	rowItemCount 8
@@ -10,7 +10,7 @@ LargeScreenPicture
 	verticalStride 222
 SmallScreenPicture
 	textureName "EXILE_PLAYER_PICTURE_SMALL.tga"
-	startTopLeft [5,77]
+	startTopLeft [ 0 , 0 ]
 	width 56
 	height 67
 	rowItemCount 8
@@ -18,7 +18,7 @@ SmallScreenPicture
 	verticalStride 72
 BottomBarPicture
 	textureName "EXILE_PLAYER_PICTURE_WINDOW.tga"
-	startTopLeft [1,79]
+	startTopLeft [ 0 , 0 ]
 	width 169
 	height 77
 	rowItemCount 8
@@ -26,7 +26,7 @@ BottomBarPicture
 	verticalStride 78
 ButtonIcon
 	textureName "EXILE_PLAYER_PICTURE_BUTTON.tga"
-	startTopLeft [3,33]
+	startTopLeft [ 0 , 0 ]
 	width 24
 	height 29
 	rowItemCount 8
@@ -34,7 +34,7 @@ ButtonIcon
 	verticalStride 32
 MediumScreenPicture
 	textureName "EXILE_PLAYER_PICTURE_MEDIUM.tga"
-	startTopLeft [0,111]
+	startTopLeft [ 0 , 0 ]
 	width 96
 	height 109
 	rowItemCount 8
