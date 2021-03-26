@@ -1,6 +1,6 @@
 TXT
 onlyLoadOnDemand FALSE
-brushCount 2
+brushCount 4
 brush
 	name "HUDICON_RESEARCHSUBJECT_WIP"
 	content "States"
