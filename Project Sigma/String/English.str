@@ -23676,3 +23676,12 @@ StringInfo
 StringInfo
 	ID "IDS_TOGGLE_ABILITY_SHIELD_DESC"
 	Value "Direct more power to the primary shield matrix"
+StringInfo
+    ID "IDS_RACESELECTDIALOG_SELECTEXILE"
+    Value "Choose Vol'tek Exilants"
+StringInfo
+    ID "IDS_CAPITALSHIP_EXILEBALANCED_NAME"
+    Value "Ak'wa-Hatik class destroyer"
+StringInfo
+    ID "IDS_CAPITALSHIP_EXILEBALANCED_DESC"
+    Value "One of the oldest, but still most widely used ships of the Vol'tek fleet. It has balanced stats, and energy can be directed to any of multiple systems."

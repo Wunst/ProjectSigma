@@ -1,7 +1,7 @@
 TXT2
 SinsArchiveVersion 194
 entityType "CapitalShip"
-ability:0 ""
+ability:0 "ABILITY_SHIELD_EXILE"
 ability:1 ""
 ability:2 ""
 ability:3 ""
@@ -85,7 +85,7 @@ CultureProtectRate
 	StartValue 0.200000
 	ValueIncreasePerLevel 0.025000
 NameStringID "IDS_CAPITALSHIP_EXILEBALANCED_NAME"
-DescriptionStringID "IDS_CAPITALSHIP_EXILEBALANCED_NAME"
+DescriptionStringID "IDS_CAPITALSHIP_EXILEBALANCED_DESC"
 picture "CAPITALSHIPPICTURE_EXILEBALANCED"
 Prerequisites
 	NumResearchPrerequisites 0
