@@ -745,7 +745,7 @@ numResearchFields 3
 field "IDS_EXILE_RESEARCHFIELD_VESSELS"
 field "IDS_EXILE_RESEARCHFIELD_MODULAR"
 field "IDS_EXILE_RESEARCHFIELD_COMMUNICATION"
-playerThemeGroupName "PLAYER_PSI"
-playerPictureGroupName "PLAYER_EXILE"
+playerThemeGroupName "PlayerExile"
+playerPictureGroupName "PlayerExile"
 raceRelationsModCount 0
 defaultFactionNameID "IDS_PLAYERFACTIONNAME_LOYALIST"
