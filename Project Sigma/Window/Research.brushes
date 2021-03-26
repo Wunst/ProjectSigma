@@ -24,4 +24,27 @@ brush
     content "Simple"
     fileName "Jutz"
     pixelBox [ 0, 0, 195, 219 ]
+brush
+    name "MAINVIEWICON_CAPITALSHIP_EXILEBALANCED"
+    content "Simple"
+    fileName "BUTTONS_BALANCED_CAP"
+    pixelBox [ 0, 0, 57, 16 ]
+brush
+    name "HUDICON_CAPITALSHIP_EXILEBALANCED"
+    content "States"
+    Disabled
+        fileName "BUTTONS_BALANCED_CAP"
+        pixelBox [ 4, 93, 46, 32 ]
+    Pressed
+        fileName "BUTTONS_BALANCED_CAP"
+        pixelBox [ 4, 18, 46, 32 ]
+    CursorOver
+        fileName "BUTTONS_BALANCED_CAP"
+        pixelBox [ 4, 55, 46, 32 ]
+    Focused
+        fileName "BUTTONS_BALANCED_CAP"
+        pixelBox [ 4, 55, 46, 32 ]
+    Normal
+        fileName "BUTTONS_BALANCED_CAP"
+        pixelBox [ 4, 18, 46, 32 ]
 
