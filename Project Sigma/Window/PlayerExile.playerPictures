@@ -6,8 +6,8 @@ LargeScreenPicture
 	width 195
 	height 219
 	rowItemCount 8
-	horizontalStride 198
-	verticalStride 222
+	horizontalStride 196
+	verticalStride 220
 SmallScreenPicture
 	textureName "EXILE_PLAYER_PICTURE_SMALL.tga"
 	startTopLeft [ 0 , 0 ]
