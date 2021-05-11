@@ -123,7 +123,7 @@ Weapon
 	CanFireAtFighter FALSE
 	SynchronizedTargeting FALSE
 	PointStaggerDelay 0.300000
-	TravelSpeed 0.000000
+	TravelSpeed 1000.000000
 	Duration 0.000000
 	fireConstraintType "CanAlwaysFire"
 	WeaponEffects
@@ -164,7 +164,7 @@ Weapon
 	CanFireAtFighter FALSE
 	SynchronizedTargeting FALSE
 	PointStaggerDelay 0.300000
-	TravelSpeed 0.000000
+	TravelSpeed 1000.000000
 	Duration 0.000000
 	fireConstraintType "CanAlwaysFire"
 	WeaponEffects
@@ -249,10 +249,10 @@ Weapon
 		DamageApplyType "OVERTIME"
 		DamageType "PHYSICAL"
 		WeaponClassType "FLAK"
-	DamagePerBank:FRONT 20.000000
-	DamagePerBank:BACK 20.000000
-	DamagePerBank:LEFT 20.000000
-	DamagePerBank:RIGHT 20.000000
+	DamagePerBank:FRONT 100.000000
+	DamagePerBank:BACK 0.000000
+	DamagePerBank:LEFT 50.000000
+	DamagePerBank:RIGHT 50.000000
 	Range 5000.000000
 	PreBuffCooldownTime 0.300000
 	CanFireAtFighter FALSE
