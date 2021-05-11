@@ -95,14 +95,7 @@ Prerequisites
 	RequiredFactionNameID ""
 	RequiredCompletedResearchSubjects 0
 statCountType "Titan"
-UpgradeTypeCount 7	
-UpgradeType "TITANUPGRADE_EXILE_ABILITYA"
-UpgradeType "TITANUPGRADE_EXILE_ABILITYB"
-UpgradeType "TITANUPGRADE_EXILE_ABILITYC"
-UpgradeType "TITANUPGRADE_EXILE_ABILITYD"
-UpgradeType "TITANUPGRADE_EXILE_DURABILITY"
-UpgradeType "TITANUPGRADE_EXILE_WEAPONS"
-UpgradeType "TITANUPGRADE_EXILE_ABILITIES"
+UpgradeTypeCount 0
 numRandomDebrisLarge 85
 numRandomDebrisSmall 15
 numSpecificDebris 1
