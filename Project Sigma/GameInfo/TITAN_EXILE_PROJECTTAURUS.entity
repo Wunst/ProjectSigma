@@ -172,7 +172,7 @@ Weapon
 		burstCount 5
 		burstDelay 0.000000
 		fireDelay 0.100000
-		muzzleEffectName "WEAPON_EXILE_MISSILETITAN_MUZZLE"
+		muzzleEffectName "Weapon_PhaseCapitalMissileUltra_Muzzle"
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
 			soundCount 3
@@ -220,7 +220,7 @@ Weapon
 		burstCount 3
 		burstDelay 0.250000
 		fireDelay 0.000000
-	muzzleEffectName "WEAPON_EXILE_IONTITAN_MUZZLE"
+	muzzleEffectName "Weapon_PhaseCapitalFlashBeamCapShip_Muzzle"
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
 			soundCount 1
@@ -266,7 +266,7 @@ Weapon
 		burstCount 5
 		burstDelay 0.000000
 		fireDelay 0.100000
-		muzzleEffectName "WEAPON_EXILE_IONTITAN_MUZZLE"
+		muzzleEffectName "Weapon_TechRebel_TitanRailgun_Muzzle"
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
 			soundCount 3
