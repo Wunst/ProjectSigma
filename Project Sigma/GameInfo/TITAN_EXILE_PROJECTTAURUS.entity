@@ -123,7 +123,7 @@ Weapon
 	CanFireAtFighter FALSE
 	SynchronizedTargeting FALSE
 	PointStaggerDelay 0.300000
-	TravelSpeed 0.000000
+	TravelSpeed 1000.000000
 	Duration 0.000000
 	fireConstraintType "CanAlwaysFire"
 	WeaponEffects
@@ -165,7 +165,11 @@ Weapon
 	SynchronizedTargeting FALSE
 	PointStaggerDelay 0.300000
 	TravelSpeed 1000.000000
+<<<<<<< HEAD
 	Duration 1000.000000
+=======
+	Duration 0.000000
+>>>>>>> 1d5876ddcda8954d17e6cf9f240361481c5ebbae
 	fireConstraintType "CanAlwaysFire"
 	WeaponEffects
 		weaponType "Projectile"
@@ -249,10 +253,10 @@ Weapon
 		DamageApplyType "BACKLOADED"
 		DamageType "PHYSICAL"
 		WeaponClassType "FLAK"
-	DamagePerBank:FRONT 20.000000
-	DamagePerBank:BACK 20.000000
-	DamagePerBank:LEFT 20.000000
-	DamagePerBank:RIGHT 20.000000
+	DamagePerBank:FRONT 100.000000
+	DamagePerBank:BACK 0.000000
+	DamagePerBank:LEFT 50.000000
+	DamagePerBank:RIGHT 50.000000
 	Range 5000.000000
 	PreBuffCooldownTime 0.300000
 	CanFireAtFighter FALSE
