@@ -165,11 +165,7 @@ Weapon
 	SynchronizedTargeting FALSE
 	PointStaggerDelay 0.300000
 	TravelSpeed 1000.000000
-<<<<<<< HEAD
 	Duration 1000.000000
-=======
-	Duration 0.000000
->>>>>>> 1d5876ddcda8954d17e6cf9f240361481c5ebbae
 	fireConstraintType "CanAlwaysFire"
 	WeaponEffects
 		weaponType "Projectile"
