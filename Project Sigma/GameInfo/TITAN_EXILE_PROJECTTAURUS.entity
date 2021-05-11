@@ -135,9 +135,9 @@ Weapon
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
 			soundCount 3
-			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE"
-			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT1"
-			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT2"
+			sound "New Worlds"
+			sound "IONCANNON"
+			sound "Sins Sound"
 		hitEffectName "Weapon_TechRebel_TitanRailgun_Hit"
 		hitHullEffectSounds
 			soundCount 1
