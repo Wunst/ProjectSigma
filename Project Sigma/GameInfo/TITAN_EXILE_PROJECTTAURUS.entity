@@ -111,7 +111,7 @@ Weapon
 	damageEnums
 		AttackType "TITAN"
 		DamageAffectType "AFFECTS_ONLY_SHIELDS"
-		DamageApplyType "OVERTIME"
+		DamageApplyType "BACKLOADED"
 		DamageType "ENERGY"
 		WeaponClassType "ION"
 	DamagePerBank:FRONT 100.000000
@@ -164,8 +164,8 @@ Weapon
 	CanFireAtFighter FALSE
 	SynchronizedTargeting FALSE
 	PointStaggerDelay 0.300000
-	TravelSpeed 0.000000
-	Duration 0.000000
+	TravelSpeed 1000.000000
+	Duration 1000.000000
 	fireConstraintType "CanAlwaysFire"
 	WeaponEffects
 		weaponType "Projectile"
@@ -246,7 +246,7 @@ Weapon
 	damageEnums
 		AttackType "TITAN"
 		DamageAffectType "AFFECTS_SHIELDS_AND_HULL"
-		DamageApplyType "OVERTIME"
+		DamageApplyType "BACKLOADED"
 		DamageType "PHYSICAL"
 		WeaponClassType "FLAK"
 	DamagePerBank:FRONT 20.000000
