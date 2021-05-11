@@ -131,7 +131,7 @@ Weapon
 		burstCount 5
 		burstDelay 0.000000
 		fireDelay 0.100000
-		muzzleEffectName "WEAPON_EXILE_IONTITAN_MUZZLE"
+		muzzleEffectName "Weapon_PulseWave_Titan_Muzzle"
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
 			soundCount 3
