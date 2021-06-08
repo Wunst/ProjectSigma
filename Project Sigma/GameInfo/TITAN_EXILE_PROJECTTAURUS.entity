@@ -104,7 +104,7 @@ armorType "Titan"
 hudIcon "HUDICON_RESEARCHSUBJECT_TITAN_PSIREBEL"
 smallHudIcon "HUDICONSMALL_TITAN_PSIREBEL"
 infoCardIcon "INFOCARDICON_TITAN_PSIREBEL"
-minZoomDistanceMult 0.90000
+minZoomDistanceMult 2.000000
 NumWeapons 4
 Weapon
 	WeaponType "Projectile"
@@ -339,7 +339,7 @@ NumSoundsFor:ONSTARTPHASEJUMP 1
 SoundID "TITAN_PSIREBEL_ONSTARTPHASEJUMP_0"
 MeshNameInfoCount 1
 MeshNameInfo
-	meshName "titanmodel"
+	meshName "TitanTheModel"
 	criteriaType "None"
 meshNameIncreasedEffectName ""
 meshNameDecreasedEffectName ""
