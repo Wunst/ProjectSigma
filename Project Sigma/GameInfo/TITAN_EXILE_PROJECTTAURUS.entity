@@ -134,8 +134,7 @@ Weapon
 		muzzleEffectName "Weapon_PulseWave_Titan_Muzzle"
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
-			soundCount 3
-			sound "New Worlds"
+			soundCount 2
 			sound "IONCANNON"
 			sound "Sins Sound"
 		hitEffectName "Weapon_TechRebel_TitanRailgun_Hit"
@@ -175,8 +174,7 @@ Weapon
 		muzzleEffectName "Weapon_PhaseCapitalMissileUltra_Muzzle"
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
-			soundCount 3
-			sound "New Worlds"
+			soundCount 2
 			sound "IONCANNON"
 			sound "Sins Sound"
 		hitEffectName "Weapon_TechRebel_TitanRailgun_Hit"
@@ -269,8 +267,7 @@ Weapon
 		muzzleEffectName "Weapon_TechRebel_TitanRailgun_Muzzle"
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
-			soundCount 3
-			sound "New Worlds"
+			soundCount 2
 			sound "IONCANNON"
 			sound "Sins Sound"
 		hitEffectName "Weapon_TechRebel_TitanRailgun_Hit"
@@ -344,7 +341,7 @@ MeshNameInfo
 meshNameIncreasedEffectName ""
 meshNameDecreasedEffectName ""
 ExhaustParticleSystemName "Exhaust_PsiRebelTitan"
-ExplosionName "CapitalShip0"
+ExplosionName "TechStarbase"
 CommandPoints
 	StartValue 3.250000
 	ValueIncreasePerLevel 0.500000
