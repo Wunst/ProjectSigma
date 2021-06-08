@@ -159,7 +159,7 @@ Weapon
 	DamagePerBank:BACK 60.000000
 	DamagePerBank:LEFT 50.000000
 	DamagePerBank:RIGHT 50.000000
-	Range 10000.000000
+	Range 40000.000000
 	PreBuffCooldownTime 0.300000
 	CanFireAtFighter FALSE
 	SynchronizedTargeting FALSE
@@ -176,9 +176,9 @@ Weapon
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
 			soundCount 3
-			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE"
-			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT1"
-			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT2"
+			sound "New Worlds"
+			sound "IONCANNON"
+			sound "Sins Sound"
 		hitEffectName "Weapon_TechRebel_TitanRailgun_Hit"
 		hitHullEffectSounds
 			soundCount 1
@@ -270,9 +270,9 @@ Weapon
 		muzzleSoundMinRespawnTime 0.100000
 		muzzleSounds
 			soundCount 3
-			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE"
-			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT1"
-			sound "WEAPON_PSICAPITALPLASMAHEAVY_MUZZLE_ALT2"
+			sound "New Worlds"
+			sound "IONCANNON"
+			sound "Sins Sound"
 		hitEffectName "Weapon_TechRebel_TitanRailgun_Hit"
 		hitHullEffectSounds
 			soundCount 1
