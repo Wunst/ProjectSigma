@@ -7,7 +7,7 @@ infoCardIcon ""
 NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_DEATHRAY_NAME"
 DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_DEATHRAY_DESCRIPTION"
 researchWindowLocation
-	block 0
+	block 1
 	pos [ 5 , 3 ]
 ResearchField "Defense"
 Prerequisites

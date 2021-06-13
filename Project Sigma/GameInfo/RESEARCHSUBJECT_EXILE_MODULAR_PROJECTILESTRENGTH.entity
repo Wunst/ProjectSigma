@@ -7,7 +7,7 @@ infoCardIcon ""
 NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILESTRENGTH_NAME"
 DescriptionStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_PROJECTILESTRENGTH_DESCRIPTION"
 researchWindowLocation
-	block 0
+	block 1
 	pos [ 1 , 2 ]
 ResearchField "Defense"
 Prerequisites
