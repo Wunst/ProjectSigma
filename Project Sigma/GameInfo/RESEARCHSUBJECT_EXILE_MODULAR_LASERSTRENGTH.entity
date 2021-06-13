@@ -11,10 +11,7 @@ researchWindowLocation
 	pos [ 2 , 3 ]
 ResearchField "Combat"
 Prerequisites
-	NumResearchPrerequisites 1
-	ResearchPrerequisite
-		Subject "RESEARCHSUBJECT_EXILE_MODULAR_LASERS"
-		Level 1
+	NumResearchPrerequisites 0
 	RequiredFactionNameID ""
 	RequiredCompletedResearchSubjects 0
 MinimumArtifactLevel -1
