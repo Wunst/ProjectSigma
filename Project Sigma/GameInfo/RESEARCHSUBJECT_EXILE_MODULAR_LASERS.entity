@@ -7,9 +7,9 @@ infoCardIcon ""
 NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_LASERS_NAME"
 DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_LASERS_DESCRIPTION"
 researchWindowLocation
-	block 1
+	block 0
 	pos [ 1 , 3 ]
-ResearchField "Defense"
+ResearchField "Combat"
 Prerequisites
 	NumResearchPrerequisites 0
 	RequiredFactionNameID ""

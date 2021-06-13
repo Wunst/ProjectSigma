@@ -7,9 +7,9 @@ infoCardIcon ""
 NameStringID "IDS_RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER_NAME"
 DescriptionStringID "RESEARCHSUBJECT_EXILE_MODULAR_ANTI_FIGHTER_DESCRIPTION"
 researchWindowLocation
-	block 1
+	block 0
 	pos [ 3 , 1 ]
-ResearchField "Defense"
+ResearchField "Combat"
 Prerequisites
 	NumResearchPrerequisites 1
 	ResearchPrerequisite
